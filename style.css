@@ -8,7 +8,7 @@
     color: #0f0000;
 }
 
-.wapper{
+.wrapper{
     background-color: #f1f1f1;
 }
 
@@ -69,8 +69,9 @@ rt{
 }
 
 #intro .element{
-    margin: 100px 5%;
+    margin: 100px auto;
     width: 90vw;
+    max-width: 1300px;
     height: 400px;
     position: relative;
 }
@@ -78,11 +79,12 @@ rt{
 #intro .sentence{
     width: 600px;
     padding: 50px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(241,241,241,0.5);
     border: 0 solid #000;
     border-radius: 5px;
     position: absolute;
     top: 50%;
+    z-index: 1;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
@@ -100,7 +102,7 @@ rt{
 
 #intro img{
     width: 600px;
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -164,9 +166,7 @@ rt{
     width: 25vw;
     height: 25vw;
     float: left;
-    margin-bottom: 150px;
     position: relative;
-    transition: 0.5s;
 }
 
 .menu-imgs .menu-img .menu-name{
@@ -212,6 +212,7 @@ rt{
 }
 
 #news iframe{
+    z-index: 0;
     width: 500px;
     display: block;
     margin: 0 auto;
