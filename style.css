@@ -1,7 +1,3 @@
-img{
-    width: 300px;
-}
-    
 * {
     padding: 0;
     margin: 0;
@@ -45,10 +41,7 @@ img{
     letter-spacing: 30px;
     text-align: center;
     margin: 150px 0 30px;
-}
-
-.no-letterspace{
-    letter-spacing: 0px;
+    padding-left: 30px;
 }
 
 rt{
@@ -102,6 +95,7 @@ rt{
 
 #intro .left-sentence{
     left: 0;
+    padding-left: 0;
 }
 
 #intro img{
@@ -124,7 +118,103 @@ rt{
     left: 0;
 }
 
-#news img{
+.coffee{
+    width: 800px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#menu .coffee h2{
+    font-size: 32px;
+}
+
+#menu h3{
+    font-size: 32px;
+    margin-top: -60px;
+    float: right;
+}
+#menu p{
+    width: 500px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+#menu-img-1{
+    background-image: url(images/affogato.png);
+    background-size: cover;
+}
+
+#menu-img-2{
+    background-image: url(images/cake.png);
+    background-size: cover;
+}
+
+#menu-img-3{
+    background-image: url(images/ginger.png);
+    background-size: cover;
+}
+
+#menu-img-4{
+    background-image: url(images/soda.png);
+    background-size: cover;
+}
+
+.menu-imgs .menu-img{
+    width: 25vw;
+    height: 25vw;
+    float: left;
+    margin-bottom: 150px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.menu-imgs .menu-img .menu-name{
+    color: #f1f1f1;
+    text-align: right;
+    position: absolute;
+    right: 2vw;
+    bottom: 3vw;
+    opacity: 0;
+    transition: 0.5s;
+    transition-duration: ease;
+}
+
+.yen{
+    color: #f1f1f1;
+    font-size: 35px;
+}
+
+.filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu-img:hover > .filter{
+    opacity: 0.4
+}
+
+.menu-img:hover > .menu-name{
+    opacity: 1;
+    bottom: 2vw;
+}
+
+#menu:after{
+   content: "";
+   display: block;
+   clear: both;
+}
+
+#news iframe{
+    width: 500px;
+    display: block;
+    margin: 0 auto;
 }
 
 .slider-for div img{
@@ -140,5 +230,41 @@ rt{
 
 .slider{
     margin: 0 20%;
+}
+
+#access iframe{
+    width: 40%;
+    margin-left: 10%;
+}
+
+#access .element{
+    width: 35%;
+    float: right;
+    padding-left: 5%;
+    padding-right:10%;
+}
+
+#access h2{
+    font-size: 30px;
+    padding: 20px;
+}
+
+#access h3{
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+#access img{
+    width: 50px;
+    margin: 10px;
+    float: right;
+}
+
+footer h5{
+    text-align: center;
+    color: #f1f1f1;
+    background-color: #0f0000;
+    margin-top: 300px;
 }
 
