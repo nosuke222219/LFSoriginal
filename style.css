@@ -44,7 +44,11 @@ img{
     font-size: 60px;
     letter-spacing: 30px;
     text-align: center;
-    margin: 150px -30px 30px 0;
+    margin: 150px 0 30px;
+}
+
+.no-letterspace{
+    letter-spacing: 0px;
 }
 
 rt{
