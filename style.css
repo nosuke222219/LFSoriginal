@@ -9,6 +9,7 @@ img{
     font-style: normal;
     font-weight: 400;
     line-height: 4ex;
+    color: #0f0000;
 }
 
 .wapper{
@@ -42,6 +43,10 @@ img{
 .contents h1,ruby{
     font-size: 60px;
     letter-spacing: 30px;
+    -webkit-transform: translate(30px,0);
+    -ms-transform: translate(30px,0);
+    -o-transform: translate(30px,0);
+    transform: translate(30px,0);
     text-align: center;
     margin: 150px 0 30px;
 }
@@ -123,4 +128,19 @@ rt{
 #news img{
 }
 
+.slider-for div img{
+    width: 60vh;
+    height: 60vh;
+    display: block;
+    margin: 50px auto;
+    border: 8px double #ad870e;
+}
+
+.slider div img{
+    width: 99%;
+}
+
+.slider{
+    margin: 0 20%;
+}
 

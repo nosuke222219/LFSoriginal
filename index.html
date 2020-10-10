@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -33,7 +34,13 @@
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
+
     </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -115,17 +122,25 @@
 
         <div id="gallery" class="contents">
             <h1>Gallery</h1>
-            <div class="gal-img">
-                <div>
-                    <img src="images/g1.jpg" alt="">
-                    <img src="images/g2.jpg" alt="">
-                    <img src="images/g3.jpg" alt="">
-                    <img src="images/g4.jpg" alt="">
-                    <img src="images/g5.jpg" alt="">
-                    <img src="images/g6.jpg" alt="">
-                    <img src="images/g7.jpg" alt="">
-                    <img src="images/g8.jpg" alt="">
-                </div>
+            <div class="slider-for">
+                <div><img src="images/g1.jpg" alt=""></div>
+                <div><img src="images/g2.jpg" alt=""></div>
+                <div><img src="images/g3.jpg" alt=""></div>
+                <div><img src="images/g4.jpg" alt=""></div>
+                <div><img src="images/g5.jpg" alt=""></div>
+                <div><img src="images/g6.jpg" alt=""></div>
+                <div><img src="images/g7.jpg" alt=""></div>
+                <div><img src="images/g8.jpg" alt=""></div>
+            </div>
+            <div class="slider">
+                <div><img src="images/g1.jpg" alt=""></div>
+                <div><img src="images/g2.jpg" alt=""></div>
+                <div><img src="images/g3.jpg" alt=""></div>
+                <div><img src="images/g4.jpg" alt=""></div>
+                <div><img src="images/g5.jpg" alt=""></div>
+                <div><img src="images/g6.jpg" alt=""></div>
+                <div><img src="images/g7.jpg" alt=""></div>
+                <div><img src="images/g8.jpg" alt=""></div>
             </div>
         </div>
 
@@ -144,4 +159,51 @@
             <h5>&copy;Cafe海猿舎</h5>
         </footer>
     </div>
-</body></html>
+
+    <script>
+        $(function() {
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider'
+            });
+            $('.slider').slick({
+                arrows: true,
+                dots: true,
+                autoplay: true,
+                asNavFor: '.slider-for',
+                autoplaySpeed: 10000,
+                centerMode: true,
+                focusOnSelect: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 1030,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 770,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+
+            });
+        });
+
+    </script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>
