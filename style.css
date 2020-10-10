@@ -1,0 +1,126 @@
+img{
+    width: 300px;
+}
+    
+* {
+    padding: 0;
+    margin: 0;
+    font-family: ten-mincho, serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4ex;
+}
+
+.wapper{
+    background-color: #f1f1f1;
+}
+
+.sp{
+    display: none;
+}
+
+.hero{
+    background-image: url(images/hero.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero img{
+    background: none;
+    position: absolute;
+    width: 50%;
+    max-width: 600px;
+    top: 50vh;
+    left: 50vw;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.contents h1,ruby{
+    font-size: 60px;
+    letter-spacing: 30px;
+    text-align: center;
+    margin: 150px 0 30px;
+}
+
+rt{
+    font-size: 25px;
+}
+
+.concept{
+    font-size:24px;
+    text-align: center;
+    line-height: 50px;
+    margin: 80px;
+    white-space: nowrap;
+}
+
+#intro h2{
+    font-size: 45px;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+
+#intro p:not(.concept){
+    font-size:24px;
+    width: 90%;
+    padding-left: 10%;
+    margin-right: 30px;
+}
+
+#intro .element{
+    margin: 100px 5%;
+    width: 90vw;
+    height: 400px;
+    position: relative;
+}
+
+#intro .sentence{
+    width: 600px;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.5);
+    border: 0 solid #000;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+#intro .right-sentence{
+    right: 0;
+}
+
+#intro .left-sentence{
+    left: 0;
+}
+
+#intro img{
+    width: 600px;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    
+}
+
+#intro .right-photo{
+    right: 0;
+}
+
+#intro .left-photo{
+    left: 0;
+}
+
+#news img{
+}
+
+
