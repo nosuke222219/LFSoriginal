@@ -129,8 +129,7 @@ rt{
 }
 
 .slider-for div img{
-    width: 60vh;
-    height: 60vh;
+    width: 50%;
     display: block;
     margin: 50px auto;
     border: 8px double #ad870e;
