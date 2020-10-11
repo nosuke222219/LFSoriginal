@@ -8,15 +8,15 @@
     color: #0f0000;
 }
 
-.wrapper{
+.wrapper {
     background-color: #f1f1f1;
 }
 
-.sp{
+.sp {
     display: none;
 }
 
-.nav{
+.nav {
     position: fixed;
     bottom: 0;
     padding: 10px;
@@ -26,16 +26,13 @@
     background-color: #d3ab2d;
 }
 
-.nav ul{
-}
-
-.nav li{
+.nav li {
     position: relative;
     display: inline-block;
     width: 16%;
 }
 
-li a{
+li a {
     text-decoration: none;
     color: #f1f1f1;
     padding: 5px;
@@ -45,14 +42,262 @@ li a{
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.3s;
+    z-index: 10;
+    background-color: rgba(211, 171, 45, 0.6);
 }
 
-li a:hover{
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
-    padding: 2px 5px 8px;
+@keyframes intro {
+    0% {
+        -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        transform: rotate(20deg);
+        -webkit-transform-origin: 50% 80% 0;
+        -moz-transform-origin: 50% 80% 0;
+        -ms-transform-origin: 50% 80% 0;
+        -o-transform-origin: 50% 80% 0;
+        transform-origin: 50% 80% 0;
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
 }
 
-.trim{
+@keyframes menu-ani {
+    0% {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    
+    25% {
+        -webkit-transform: translate(0, -25px);
+        -ms-transform: translate(0, -25px);
+        -o-transform: translate(0, -25px);
+        transform: translate(0, -25px);
+    }
+
+    50% {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes news {
+    0% {
+        width: 55%;
+        -webkit-transform: rotate(0deg)scale(0.7);
+        -ms-transform: rotate(0deg)scale(0.7);
+        -o-transform: rotate(0deg)scale(0.7);
+        transform: rotate(0deg)scale(0.7);
+        
+        -webkit-transform-origin: 50% 100% 0;
+        -moz-transform-origin: 50% 100% 0;
+        -ms-transform-origin: 50% 100% 0;
+        -o-transform-origin: 50% 100% 0;
+        transform-origin: 50% 100% 0;
+    }
+    25%{
+        width: 0%;
+        -webkit-transform: rotate(180deg)scale(0);
+        -ms-transform: rotate(180deg)scale(0);
+        -o-transform: rotate(180deg)scale(0);
+        transform: rotate(180deg)scale(0);
+    }
+    50% {
+        width: 0%;
+        -webkit-transform: rotate(360deg)scale(0.7);
+        -ms-transform: rotate(360deg)scale(0.7);
+        -o-transform: rotate(360deg)scale(0.7);
+        transform: rotate(360deg)scale(0.7);
+    }
+    100%{
+        width: 55%;
+        -webkit-transform: rotate(360deg)scale(0.7);
+        -ms-transform: rotate(360deg)scale(0.7);
+        -o-transform: rotate(360deg)scale(0.7);
+        transform: rotate(360deg)scale(0.7);
+    }
+}
+
+@keyframes news2 {
+    0% {
+        -webkit-transform: rotate(0deg)scale(0.7);
+        -ms-transform: rotate(0deg)scale(0.7);
+        -o-transform: rotate(0deg)scale(0.7);
+        transform: rotate(0deg)scale(0.7);
+        
+        -webkit-transform-origin: 50% 150% 0;
+        -moz-transform-origin: 50% 150% 0;
+        -ms-transform-origin: 50% 150% 0;
+        -o-transform-origin: 50% 150% 0;
+        transform-origin: 50% 150% 0;
+    }
+    25%{
+        -webkit-transform: rotate(180deg)scale(0);
+        -ms-transform: rotate(180deg)scale(0);
+        -o-transform: rotate(180deg)scale(0);
+        transform: rotate(180deg)scale(0);
+    }
+    50% {
+        -webkit-transform: rotate(360deg)scale(0.7);
+        -ms-transform: rotate(360deg)scale(0.7);
+        -o-transform: rotate(360deg)scale(0.7);
+        transform: rotate(360deg)scale(0.7);
+    }
+    100% {
+        -webkit-transform: rotate(360deg)scale(0.7);
+        -ms-transform: rotate(360deg)scale(0.7);
+        -o-transform: rotate(360deg)scale(0.7);
+        transform: rotate(360deg)scale(0.7);
+    }
+}
+
+@keyframes gallery{
+    0%{
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 70% 40% 0;
+        -moz-transform-origin: 70% 40% 0;
+        -ms-transform-origin: 70% 40% 0;
+        -o-transform-origin: 70% 40% 0;
+        transform-origin: 70% 40% 0;
+    }
+    10%{
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    15%{
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    20%{
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+    100%{
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+
+/* .animationごと移動*/
+.animation {
+    -webkit-transform: translate(0, 500px);
+    -ms-transform: translate(0, 500px);
+    -o-transform: translate(0, 500px);
+    transform: translate(0, 500px);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    transition-timing-function: ease;
+}
+
+li a:hover + .animation {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.animation img , .animation div{
+    width: 60%;
+    position: absolute;
+    bottom: -20px;
+    right: -15%;
+}
+
+#nav-1 a:hover + .animation #intro-1 {
+    animation: intro 0.5s ease-in-out 0s infinite alternate ;
+}
+
+#nav-2 .animation img{
+    width: 80%;
+}
+
+#menu-1{
+    z-index: 3;
+}
+
+#nav-2 img{
+    right: -20%;
+}
+
+#nav-2 a:hover + .animation #menu-2 {
+    animation: menu-ani 1.0s ease 0.3s infinite backwards ;
+}
+
+#nav-2 a:hover + .animation #menu-3 {
+    animation: menu-ani 1.0s ease 0.4s infinite backwards ;
+}
+
+#nav-2 a:hover + .animation #menu-4 {
+    animation: menu-ani 1.0s ease 0.5s infinite backwards ;
+}
+
+#nav-2 a:hover + .animation #menu-5 {
+    animation: menu-ani 1.0s ease 0.6s infinite backwards ;
+}
+
+#nav-2 a:hover + .animation #menu-6 {
+    animation: menu-ani 1.0s ease 0.7s infinite backwards ;
+}
+
+#nav-3 .trim{
+    position: absolute;
+    overflow: hidden;
+    right: -13%;
+    bottom: -10px;
+    width: 55%;
+    height:10vw;
+    
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#nav-3 .trim img{
+    width: 9vw;
+    z-index: 0;
+    bottom: -1vh;
+    right: 0;
+    
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#nav-3 a:hover + .animation .trim{
+    animation: news 2.0s ease 0s infinite both ;
+}
+
+#nav-3 a:hover + .animation img{
+    animation: news2 2.0s ease 0s infinite both ;
+}
+
+#nav-4 a:hover + .animation #gallery-2{
+    animation: gallery 2.0s ease 0s infinite backwards ;
+}
+
+#animation-coffee {
     position: absolute;
     overflow: hidden;
     right: 5%;
@@ -61,40 +306,41 @@ li a:hover{
     height: 0px;
 }
 
-#coffee{
+#coffee {
     z-index: 0;
     bottom: 0;
     right: 0;
 }
 
-.animation img{
+.animation-coffee img {
     width: 100px;
     position: absolute;
     bottom: -10px;
     right: 5%;
 }
 
-.hero{
+.hero {
     background-image: url(images/hero.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
 
-.hero img{
+.hero img {
     background: none;
     position: absolute;
     width: 50%;
     max-width: 600px;
     top: 50vh;
     left: 50vw;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-.contents h1,ruby{
+.contents h1,
+ruby {
     font-size: 60px;
     letter-spacing: 30px;
     text-align: center;
@@ -102,31 +348,31 @@ li a:hover{
     padding-left: 30px;
 }
 
-rt{
+rt {
     font-size: 25px;
 }
 
-.concept{
-    font-size:24px;
+.concept {
+    font-size: 24px;
     text-align: center;
     line-height: 50px;
     margin: 80px;
     white-space: nowrap;
 }
 
-#intro h2{
+#intro h2 {
     font-size: 45px;
     margin-left: 30px;
     white-space: nowrap;
 }
 
-#intro p:not(.concept){
-    font-size:24px;
+#intro p:not(.concept) {
+    font-size: 24px;
     width: 90%;
     padding-left: 10%;
 }
 
-#intro .element{
+#intro .element {
     margin: 100px auto;
     width: 90vw;
     max-width: 1300px;
@@ -134,10 +380,10 @@ rt{
     position: relative;
 }
 
-#intro .sentence{
+#intro .sentence {
     width: 600px;
     padding: 50px;
-    background-color: rgba(241,241,241,0.5);
+    background-color: rgba(241, 241, 241, 0.5);
     border: 0 solid #000;
     border-radius: 5px;
     position: absolute;
@@ -149,16 +395,16 @@ rt{
     transform: translate(0, -50%);
 }
 
-#intro .right-sentence{
+#intro .right-sentence {
     right: 0;
 }
 
-#intro .left-sentence{
+#intro .left-sentence {
     left: 0;
     padding-left: 0;
 }
 
-#intro img{
+#intro img {
     width: 600px;
     z-index: 0;
     position: absolute;
@@ -167,67 +413,68 @@ rt{
     -ms-transform: translate(0, -50%);
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    
+
 }
 
-#intro .right-photo{
+#intro .right-photo {
     right: 0;
 }
 
-#intro .left-photo{
+#intro .left-photo {
     left: 0;
 }
 
-.coffee{
+.coffee {
     width: 800px;
     height: 200px;
     display: block;
     margin: 0 auto;
 }
 
-#menu .coffee h2{
+#menu .coffee h2 {
     font-size: 32px;
 }
 
-#menu h3{
+#menu h3 {
     font-size: 32px;
     margin-top: -60px;
     float: right;
 }
-#menu p{
+
+#menu p {
     width: 500px;
     font-size: 20px;
     padding-left: 40px;
 }
 
-#menu-img-1{
+#menu-img-1 {
     background-image: url(images/affogato.png);
     background-size: cover;
 }
 
-#menu-img-2{
+#menu-img-2 {
     background-image: url(images/cake.png);
     background-size: cover;
 }
 
-#menu-img-3{
+#menu-img-3 {
     background-image: url(images/ginger.png);
     background-size: cover;
 }
 
-#menu-img-4{
+#menu-img-4 {
     background-image: url(images/soda.png);
     background-size: cover;
 }
 
-.menu-imgs .menu-img{
+.menu-imgs .menu-img {
     width: 25vw;
     height: 25vw;
     float: left;
     position: relative;
 }
 
-.menu-imgs .menu-img .menu-name{
+.menu-imgs .menu-img .menu-name {
     color: #f1f1f1;
     text-align: right;
     position: absolute;
@@ -235,15 +482,15 @@ rt{
     bottom: 3vw;
     opacity: 0;
     transition: 0.5s;
-    transition-duration: ease;
+    transition-timing-function: ease;
 }
 
-.yen{
+.yen {
     color: #f1f1f1;
     font-size: 35px;
 }
 
-.filter{
+.filter {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -254,77 +501,76 @@ rt{
     transition: 0.5s;
 }
 
-.menu-img:hover > .filter{
+.menu-img:hover > .filter {
     opacity: 0.4
 }
 
-.menu-img:hover > .menu-name{
+.menu-img:hover > .menu-name {
     opacity: 1;
     bottom: 2vw;
 }
 
-#menu:after{
-   content: "";
-   display: block;
-   clear: both;
+#menu:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
-#news iframe{
+#news iframe {
     z-index: 0;
     width: 500px;
     display: block;
     margin: 0 auto;
 }
 
-.slider-for div img{
+.slider-for div img {
     width: 50%;
     display: block;
     margin: 50px auto;
     border: 8px double #ad870e;
 }
 
-.slider div img{
+.slider div img {
     width: 99%;
 }
 
-.slider{
+.slider {
     margin: 0 20%;
 }
 
-#access iframe{
+#access iframe {
     width: 40%;
     margin-left: 10%;
 }
 
-#access .element{
+#access .element {
     width: 35%;
     float: right;
     padding-left: 5%;
-    padding-right:10%;
+    padding-right: 10%;
 }
 
-#access h2{
+#access h2 {
     font-size: 30px;
     padding: 20px;
 }
 
-#access h3{
+#access h3 {
     font-size: 20px;
     padding: 5px;
     padding-left: 20px;
 }
 
-#access img{
+#access img {
     width: 50px;
     margin: 10px;
     float: right;
 }
 
-footer h5{
+footer h5 {
     text-align: center;
     color: #f1f1f1;
     background-color: #0f0000;
     margin-top: 300px;
     margin-bottom: 50px;
 }
-
