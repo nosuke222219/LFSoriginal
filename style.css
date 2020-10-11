@@ -254,7 +254,7 @@ li a:hover + #nav-1 .animation {
     width: 60%;
     position: absolute;
     bottom: -20px;
-    right: -15%;
+    right: 5%;
 }
 
 #nav-1 a:hover + .animation #intro-1 {
@@ -296,7 +296,7 @@ li a:hover + #nav-1 .animation {
 #nav-3 .trim{
     position: absolute;
     overflow: hidden;
-    right: -13%;
+    right: 7%;
     bottom: -10px;
     width: 55%;
     height:10vw;
