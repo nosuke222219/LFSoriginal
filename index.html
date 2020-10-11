@@ -44,11 +44,24 @@
 
 <body>
     <div class="wrapper">
-        <div class="hero">
+        <div class="nav">
+            <ul>
+                <li><a href="#intro">Intro<span class="sp">duction</span></a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#access">Access</a></li>
+                <li class="animation">
+                    <div class="trim"><img id="coffee" src="images/coffee.png" alt=""></div>
+                    <img id="cup" src="images/cup.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="hero" id="hero">
             <img src="images/logo-alpha.png" alt="ロゴ">
         </div>
         <div id="intro" class="contents">
-            <h1>Cafe<ruby>海猿舎<rt>うみざるや</rt></ruby>とは</h1>
+            <h1>Cafe<ruby>海猿舎<rt>うみざるや</rt></ruby><ruby>とは</ruby></h1>
             <p class="concept">昭和初期に建てられた元駅前旅館の建物が<br>旅人宿に生まれ変わった「ぼちぼちいこか増毛舘」。<br>そこに併設されている9席しかない小さな喫茶店。</p>
             <div class="element">
                 <div class="left-sentence sentence">
@@ -78,7 +91,7 @@
                 <img class="right-photo" src="images/flannel.png" alt="">
             </div>
             <div class="element">
-                <img class="left-photo" src="images/cup.png" alt="">
+                <img class="left-photo" src="images/cups.png" alt="">
                 <div class="right-sentence sentence">
                     <h2>こだわりコーヒーカップ</h2>
                     <p>
@@ -130,7 +143,7 @@
 
         <div id="news" class="contents">
             <h1>News</h1>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fumisaruya&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fumisaruya&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
 
         <div id="gallery" class="contents">
@@ -221,6 +234,12 @@
                 ]
 
             });
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function() {
+            $('.trim').css('height',(60/3400*$(this).scrollTop())+"px");
         });
     </script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
