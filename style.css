@@ -218,12 +218,54 @@ li a:hover {
     }
 }
 
+@keyframes gallery2 {
+    0% {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+        -webkit-transform-origin: 0 77% 0;
+        -moz-transform-origin: 0 77% 0;
+        -ms-transform-origin: 0 77% 0;
+        -o-transform-origin: 0 77% 0;
+        transform-origin: 0 77% 0;
+    }
+
+    10% {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+
+    15% {
+        -webkit-transform: scale(1,0);
+        -ms-transform: scale(1,0);
+        -o-transform: scale(1,0);
+        transform: scale(1,0);
+    }
+
+    20% {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+
+    100% {
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+}
+
 @keyframes access {
     0% {
-        -webkit-transform: rotate(-2deg);
-        -ms-transform: rotate(-2deg);
-        -o-transform: rotate(-2deg);
-        transform: rotate(-2deg);
+        -webkit-transform: rotate(-4deg);
+        -ms-transform: rotate(-4deg);
+        -o-transform: rotate(-4deg);
+        transform: rotate(-4deg);
 
         -webkit-transform-origin: 10% 80% 0;
         -moz-transform-origin: 10% 80% 0;
@@ -233,10 +275,10 @@ li a:hover {
     }
 
     100% {
-        -webkit-transform: rotate(2deg);
-        -ms-transform: rotate(2deg);
-        -o-transform: rotate(2deg);
-        transform: rotate(2deg);
+        -webkit-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+        -o-transform: rotate(4deg);
+        transform: rotate(4deg);
     }
 }
 
@@ -345,6 +387,18 @@ li a:hover + #nav-1 .animation {
 
 #nav-4 a:hover + .animation #gallery-2 {
     animation: gallery 2.0s ease 0s infinite backwards;
+}
+
+#nav-4 a:hover + .animation #gallery-3 {
+    animation: gallery2 2.0s ease 0s infinite backwards;
+}
+
+#access-1{
+    -webkit-transform-origin: 22% 100% 0;
+        -moz-transform-origin: 22% 100% 0;
+        -ms-transform-origin: 22% 100% 0;
+        -o-transform-origin: 22% 100% 0;
+        transform-origin: 22% 100% 0;
 }
 
 #nav-5 a:hover + .animation #access-1 {
