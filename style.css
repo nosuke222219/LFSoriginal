@@ -1,5 +1,5 @@
 @-ms-viewport {
-    width:auto;
+    width: auto;
 }
 
 * {
@@ -220,10 +220,10 @@ li a:hover {
 
 @keyframes gallery2 {
     0% {
-        -webkit-transform: scale(1,1);
-        -ms-transform: scale(1,1);
-        -o-transform: scale(1,1);
-        transform: scale(1,1);
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
         -webkit-transform-origin: 0 77% 0;
         -moz-transform-origin: 0 77% 0;
         -ms-transform-origin: 0 77% 0;
@@ -232,31 +232,31 @@ li a:hover {
     }
 
     10% {
-        -webkit-transform: scale(1,1);
-        -ms-transform: scale(1,1);
-        -o-transform: scale(1,1);
-        transform: scale(1,1);
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
     }
 
     15% {
-        -webkit-transform: scale(1,0);
-        -ms-transform: scale(1,0);
-        -o-transform: scale(1,0);
-        transform: scale(1,0);
+        -webkit-transform: scale(1, 0);
+        -ms-transform: scale(1, 0);
+        -o-transform: scale(1, 0);
+        transform: scale(1, 0);
     }
 
     20% {
-        -webkit-transform: scale(1,1);
-        -ms-transform: scale(1,1);
-        -o-transform: scale(1,1);
-        transform: scale(1,1);
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
     }
 
     100% {
-        -webkit-transform: scale(1,1);
-        -ms-transform: scale(1,1);
-        -o-transform: scale(1,1);
-        transform: scale(1,1);
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
     }
 }
 
@@ -300,13 +300,6 @@ li a:hover + .animation {
     -ms-transform: translate(0, -10px);
     -o-transform: translate(0, -10px);
     transform: translate(0, -10px);
-}
-
-li a:hover + #nav-1 .animation {
-    -webkit-transform: translate(0, 0px);
-    -ms-transform: translate(0, 0px);
-    -o-transform: translate(0, 0px);
-    transform: translate(0, 0px);
 }
 
 .animation img,
@@ -393,12 +386,12 @@ li a:hover + #nav-1 .animation {
     animation: gallery2 2.0s ease 0s infinite backwards;
 }
 
-#access-1{
+#access-1 {
     -webkit-transform-origin: 22% 100% 0;
-        -moz-transform-origin: 22% 100% 0;
-        -ms-transform-origin: 22% 100% 0;
-        -o-transform-origin: 22% 100% 0;
-        transform-origin: 22% 100% 0;
+    -moz-transform-origin: 22% 100% 0;
+    -ms-transform-origin: 22% 100% 0;
+    -o-transform-origin: 22% 100% 0;
+    transform-origin: 22% 100% 0;
 }
 
 #nav-5 a:hover + .animation #access-1 {
@@ -778,11 +771,6 @@ footer h5 {
         background-color: rgba(211, 171, 45, 0);
     }
 
-    .nav li a:hover {
-        opacity: 1;
-        text-shadow: 0 0 10px #fff;
-    }
-
     #animation-coffee {
         position: fixed;
         overflow: hidden;
@@ -905,9 +893,39 @@ footer h5 {
         margin: 10px;
         white-space: wrap;
     }
-    
-    .animation{
-        display: none;
+
+    .animation {
+        -webkit-transform: translate(500px, 0);
+        -ms-transform: translate(500px, 0);
+        -o-transform: translate(500px, 0);
+        transform: translate(500px, 0);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    li a:hover + .animation {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .animation img,
+    .animation div {
+        width: 100%;
+        position: absolute;
+        bottom: -20px;
+        right: 5%;
+    }
+
+    #nav-1 .animation img {
+        width: 50%;
+    }
+
+    #nav-2 .animation img {
+        width: 150%;
     }
 
     .hero {
