@@ -806,7 +806,7 @@ footer h5 {
         width: 50px;
         height: 50px;
         right: 20px;
-        top: 13px;
+        top: 20px;
         z-index: 5;
         opacity: 0;
     }
@@ -816,7 +816,7 @@ footer h5 {
         position: fixed;
         z-index: 4;
         margin-right: 20px;
-        margin-top: 13px;
+        margin-top: 20px;
     }
 
     .hamburger > div {
@@ -833,6 +833,13 @@ footer h5 {
 
     #line1 {
         margin-top: 0;
+    }
+    
+    #button:checked{
+        -webkit-transform: translate(-15px, 0px);
+        -ms-transform: translate(-15px, 0px);
+        -o-transform: translate(-15px, 0px);
+        transform: translate(-15px, 0px);
     }
 
     #button:checked ~ .hamburger #line1 {
