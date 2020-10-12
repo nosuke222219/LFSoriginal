@@ -392,10 +392,10 @@ li a:hover + #nav-1 .animation {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    -webkit-transform: translate(0, -50px);
-    -ms-transform: translate(0, -50px);
-    -o-transform: translate(0, -50px);
-    transform: translate(0, -50px);
+    -webkit-transform: translate(0, -78px);
+    -ms-transform: translate(0, -78px);
+    -o-transform: translate(0, -78px);
+    transform: translate(0, -78px);
 }
 
 .hero img {
@@ -777,8 +777,8 @@ footer h5 {
         width: 50px;
         height: 8px;
         border-radius: 1px;
-        background-color: rgba(255, 255, 255, 0.4);
-        border: 1px solid #000;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         margin-top: 13px;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
