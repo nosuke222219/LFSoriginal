@@ -670,9 +670,9 @@ footer h5 {
         height: 110vh;
         padding: 0;
         background-color: rgba(0, 0, 0, 0.6);
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
         transition-timing-function: ease
     }
 
@@ -780,9 +780,9 @@ footer h5 {
         background-color: rgba(255, 255, 255, 0.4);
         border: 1px solid #000;
         margin-top: 13px;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
     }
     
     #line1{
