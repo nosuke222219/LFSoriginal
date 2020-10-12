@@ -719,6 +719,11 @@ footer h5 {
         position: relative;
         background-color: rgba(211, 171, 45, 0);
     }
+    
+    .nav li a:hover{
+        opacity: 1;
+        text-shadow: 0 0 10px #fff;
+    }
 
     #animation-coffee {
         position: fixed;
@@ -750,8 +755,6 @@ footer h5 {
         height: 100px;
     }
 
-
-
     #button {
         position: fixed;
         width: 50px;
@@ -766,14 +769,55 @@ footer h5 {
         right: 0;
         position: fixed;
         z-index: 4;
+        margin-right: 20px;
+        margin-top: 13px;
     }
 
     .hamburger > div {
         width: 50px;
         height: 8px;
-        background-color: #fff;
+        border-radius: 1px;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: 1px solid #000;
         margin-top: 13px;
-        margin-right: 20px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+    
+    #line1{
+        margin-top: 0;
+    }
+    
+    #button:checked ~ .hamburger #line1{
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transform-origin: left 0% 0;
+        margin: 0;
+        width: 61px;
+        border: 0;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+    #button:checked ~ .hamburger #line2{
+        width: 0;
+        border: 0;
+        
+    }
+    
+    
+    #button:checked ~ .hamburger #line3{
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg)translate(-8px, 8px);
+        transform-origin: left 100% 0;
+        margin: 0;
+        width: 61px;
+        border: 0;
+        background-color: rgba(255, 255, 255, 1);
     }
 
     #button:checked ~ .nav {
