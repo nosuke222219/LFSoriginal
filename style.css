@@ -640,7 +640,7 @@ rt {
 }
 
 footer {
-    background-color: #0f0000;
+    background-color: #511900;
     margin-top: 300px;
 }
 
@@ -719,8 +719,8 @@ footer h5 {
         position: relative;
         background-color: rgba(211, 171, 45, 0);
     }
-    
-    .nav li a:hover{
+
+    .nav li a:hover {
         opacity: 1;
         text-shadow: 0 0 10px #fff;
     }
@@ -784,12 +784,12 @@ footer h5 {
         -o-transition: 0.3s;
         transition: 0.3s;
     }
-    
-    #line1{
+
+    #line1 {
         margin-top: 0;
     }
-    
-    #button:checked ~ .hamburger #line1{
+
+    #button:checked ~ .hamburger #line1 {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         -o-transform: rotate(45deg);
@@ -800,15 +800,15 @@ footer h5 {
         border: 0;
         background-color: rgba(255, 255, 255, 1);
     }
-    
-    #button:checked ~ .hamburger #line2{
+
+    #button:checked ~ .hamburger #line2 {
         width: 0;
         border: 0;
-        
+
     }
-    
-    
-    #button:checked ~ .hamburger #line3{
+
+
+    #button:checked ~ .hamburger #line3 {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
