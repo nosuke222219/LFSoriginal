@@ -847,6 +847,10 @@ footer h5 {
         margin: 10px;
         white-space: wrap;
     }
+    
+    .animation{
+        display: none;
+    }
 
     .hero {
         -webkit-transform: translate(0, 0);
