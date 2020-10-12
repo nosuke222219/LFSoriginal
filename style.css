@@ -16,6 +16,8 @@
     display: none;
 }
 
+/*ここからナビ*/
+
 .nav {
     position: fixed;
     bottom: 0;
@@ -46,7 +48,7 @@ li a {
     background-color: rgba(211, 171, 45, 0.6);
 }
 
-li a:hover{
+li a:hover {
     opacity: 0;
 }
 
@@ -78,7 +80,7 @@ li a:hover{
         -o-transform: translate(0, 0);
         transform: translate(0, 0);
     }
-    
+
     25% {
         -webkit-transform: translate(0, -25px);
         -ms-transform: translate(0, -25px);
@@ -101,20 +103,22 @@ li a:hover{
         -ms-transform: rotate(0deg)scale(0.7);
         -o-transform: rotate(0deg)scale(0.7);
         transform: rotate(0deg)scale(0.7);
-        
+
         -webkit-transform-origin: 50% 100% 0;
         -moz-transform-origin: 50% 100% 0;
         -ms-transform-origin: 50% 100% 0;
         -o-transform-origin: 50% 100% 0;
         transform-origin: 50% 100% 0;
     }
-    25%{
+
+    25% {
         width: 0%;
         -webkit-transform: rotate(180deg)scale(0);
         -ms-transform: rotate(180deg)scale(0);
         -o-transform: rotate(180deg)scale(0);
         transform: rotate(180deg)scale(0);
     }
+
     50% {
         width: 0%;
         -webkit-transform: rotate(360deg)scale(0.7);
@@ -122,7 +126,8 @@ li a:hover{
         -o-transform: rotate(360deg)scale(0.7);
         transform: rotate(360deg)scale(0.7);
     }
-    100%{
+
+    100% {
         width: 55%;
         -webkit-transform: rotate(360deg)scale(0.7);
         -ms-transform: rotate(360deg)scale(0.7);
@@ -137,25 +142,28 @@ li a:hover{
         -ms-transform: rotate(0deg)scale(0.7);
         -o-transform: rotate(0deg)scale(0.7);
         transform: rotate(0deg)scale(0.7);
-        
+
         -webkit-transform-origin: 50% 150% 0;
         -moz-transform-origin: 50% 150% 0;
         -ms-transform-origin: 50% 150% 0;
         -o-transform-origin: 50% 150% 0;
         transform-origin: 50% 150% 0;
     }
-    25%{
+
+    25% {
         -webkit-transform: rotate(180deg)scale(0);
         -ms-transform: rotate(180deg)scale(0);
         -o-transform: rotate(180deg)scale(0);
         transform: rotate(180deg)scale(0);
     }
+
     50% {
         -webkit-transform: rotate(360deg)scale(0.7);
         -ms-transform: rotate(360deg)scale(0.7);
         -o-transform: rotate(360deg)scale(0.7);
         transform: rotate(360deg)scale(0.7);
     }
+
     100% {
         -webkit-transform: rotate(360deg)scale(0.7);
         -ms-transform: rotate(360deg)scale(0.7);
@@ -164,8 +172,8 @@ li a:hover{
     }
 }
 
-@keyframes gallery{
-    0%{
+@keyframes gallery {
+    0% {
         -webkit-transform: scale(0);
         -ms-transform: scale(0);
         -o-transform: scale(0);
@@ -176,25 +184,29 @@ li a:hover{
         -o-transform-origin: 70% 40% 0;
         transform-origin: 70% 40% 0;
     }
-    10%{
+
+    10% {
         -webkit-transform: scale(0);
         -ms-transform: scale(0);
         -o-transform: scale(0);
         transform: scale(0);
     }
-    15%{
+
+    15% {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
         transform: scale(1);
     }
-    20%{
+
+    20% {
         -webkit-transform: scale(0);
         -ms-transform: scale(0);
         -o-transform: scale(0);
         transform: scale(0);
     }
-    100%{
+
+    100% {
         -webkit-transform: scale(0);
         -ms-transform: scale(0);
         -o-transform: scale(0);
@@ -202,20 +214,21 @@ li a:hover{
     }
 }
 
-@keyframes access{
-    0%{
+@keyframes access {
+    0% {
         -webkit-transform: rotate(-2deg);
         -ms-transform: rotate(-2deg);
         -o-transform: rotate(-2deg);
         transform: rotate(-2deg);
-        
+
         -webkit-transform-origin: 10% 80% 0;
         -moz-transform-origin: 10% 80% 0;
         -ms-transform-origin: 10% 80% 0;
         -o-transform-origin: 10% 80% 0;
         transform-origin: 10% 80% 0;
     }
-    100%{
+
+    100% {
         -webkit-transform: rotate(2deg);
         -ms-transform: rotate(2deg);
         -o-transform: rotate(2deg);
@@ -250,7 +263,8 @@ li a:hover + #nav-1 .animation {
     transform: translate(0, 0px);
 }
 
-.animation img , .animation div{
+.animation img,
+.animation div {
     width: 60%;
     position: absolute;
     bottom: -20px;
@@ -258,87 +272,87 @@ li a:hover + #nav-1 .animation {
 }
 
 #nav-1 a:hover + .animation #intro-1 {
-    animation: intro 0.5s ease-in-out 0s infinite alternate ;
+    animation: intro 0.5s ease-in-out 0s infinite alternate;
 }
 
-#nav-2 .animation img{
+#nav-2 .animation img {
     width: 80%;
 }
 
-#menu-1{
+#menu-1 {
     z-index: 3;
 }
 
-#nav-2 img{
+#nav-2 img {
     right: -20%;
 }
 
 #nav-2 a:hover + .animation #menu-2 {
-    animation: menu-ani 1.0s ease 0.3s infinite backwards ;
+    animation: menu-ani 1.0s ease 0.3s infinite backwards;
 }
 
 #nav-2 a:hover + .animation #menu-3 {
-    animation: menu-ani 1.0s ease 0.4s infinite backwards ;
+    animation: menu-ani 1.0s ease 0.4s infinite backwards;
 }
 
 #nav-2 a:hover + .animation #menu-4 {
-    animation: menu-ani 1.0s ease 0.5s infinite backwards ;
+    animation: menu-ani 1.0s ease 0.5s infinite backwards;
 }
 
 #nav-2 a:hover + .animation #menu-5 {
-    animation: menu-ani 1.0s ease 0.6s infinite backwards ;
+    animation: menu-ani 1.0s ease 0.6s infinite backwards;
 }
 
 #nav-2 a:hover + .animation #menu-6 {
-    animation: menu-ani 1.0s ease 0.7s infinite backwards ;
+    animation: menu-ani 1.0s ease 0.7s infinite backwards;
 }
 
-#nav-3 .trim{
+#nav-3 .trim {
     position: absolute;
     overflow: hidden;
     right: 7%;
     bottom: -10px;
     width: 55%;
-    height:10vw;
-    
+    height: 10vw;
+
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
 
-#nav-3 .trim img{
+#nav-3 .trim img {
     width: 9vw;
     z-index: 0;
     bottom: -1vh;
     right: 0;
-    
+
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
 
-#nav-3 a:hover + .animation .trim{
-    animation: news 2.0s ease 0s infinite both ;
+#nav-3 a:hover + .animation .trim {
+    animation: news 2.0s ease 0s infinite both;
 }
 
-#nav-3 a:hover + .animation img{
-    animation: news2 2.0s ease 0s infinite both ;
+#nav-3 a:hover + .animation img {
+    animation: news2 2.0s ease 0s infinite both;
 }
 
-#nav-4 a:hover + .animation #gallery-2{
-    animation: gallery 2.0s ease 0s infinite backwards ;
+#nav-4 a:hover + .animation #gallery-2 {
+    animation: gallery 2.0s ease 0s infinite backwards;
 }
 
-#nav-5 a:hover + .animation #access-1{
-    animation: access 0.3s ease-in-out 0s infinite alternate ;
+#nav-5 a:hover + .animation #access-1 {
+    animation: access 0.3s ease-in-out 0s infinite alternate;
 }
 
-#nav-5 a:hover + .animation #access-2{
-    animation: menu-ani 0.8s ease 0.4s infinite backwards ;
+#nav-5 a:hover + .animation #access-2 {
+    animation: menu-ani 0.8s ease 0.4s infinite backwards;
 }
 
-#nav-5 a:hover + .animation #access-3{
-    animation: menu-ani 0.8s ease 0.3s infinite backwards ;
+#nav-5 a:hover + .animation #access-3 {
+    animation: menu-ani 0.8s ease 0.3s infinite backwards;
 }
 
 #animation-coffee {
@@ -363,7 +377,7 @@ li a:hover + #nav-1 .animation {
     right: 5%;
 }
 
-#link-top{
+#link-top {
     position: absolute;
     right: 5%;
     bottom: -10px;
@@ -371,11 +385,17 @@ li a:hover + #nav-1 .animation {
     height: 100px;
 }
 
+/*ここまでナビ*/
+
 .hero {
     background-image: url(images/hero.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    -webkit-transform: translate(0, -50px);
+    -ms-transform: translate(0, -50px);
+    -o-transform: translate(0, -50px);
+    transform: translate(0, -50px);
 }
 
 .hero img {
@@ -383,7 +403,7 @@ li a:hover + #nav-1 .animation {
     position: absolute;
     width: 50%;
     max-width: 600px;
-    top: 50vh;
+    top: 55vh;
     left: 50vw;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -568,9 +588,9 @@ rt {
     clear: both;
 }
 
-#news iframe {
+#news .fb-container {
     z-index: 0;
-    width: 500px;
+    width: 510px;
     display: block;
     margin: 0 auto;
 }
@@ -619,10 +639,417 @@ rt {
     float: right;
 }
 
+footer {
+    background-color: #0f0000;
+    margin-top: 300px;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
 footer h5 {
     text-align: center;
     color: #f1f1f1;
-    background-color: #0f0000;
-    margin-top: 300px;
     margin-bottom: 50px;
+}
+
+@media screen and (max-width : 810px) {
+
+    .nav {
+        -webkit-transform: translate(100vw, 0);
+        -ms-transform: translate(100vw, 0);
+        -o-transform: translate(100vw, 0);
+        transform: translate(100vw, 0);
+        bottom: auto;
+        width: 100vw;
+        height: 110vh;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        transition-timing-function: ease
+    }
+
+    .nav ul {
+        margin-top: 15vh;
+    }
+
+    .nav li {
+        display: block;
+        margin: 0 auto;
+        height: 15vh;
+    }
+
+    #nav-1 {
+        width: 238px;
+    }
+
+    #nav-2 {
+        width: 103px;
+    }
+
+    #nav-3 {
+        width: 101px;
+    }
+
+    #nav-4 {
+        width: 137px;
+    }
+
+    #nav-5 {
+        width: 124px;
+    }
+
+    li a span {
+        color: #f1f1f1;
+    }
+
+    .nav li a {
+        letter-spacing: 5px;
+        font-size: 30px;
+        bottom: auto;
+        right: auto;
+        color: #f1f1f1;
+        position: relative;
+        background-color: rgba(211, 171, 45, 0);
+    }
+
+    #animation-coffee {
+        position: fixed;
+        overflow: hidden;
+        width: 100px;
+        height: 0px;
+        bottom: 90px;
+        right: 5%;
+    }
+
+    #coffee {
+        z-index: 0;
+        bottom: 10px;
+        right: 0;
+    }
+
+    .animation-coffee img {
+        width: 100px;
+        position: absolute;
+        bottom: 60px;
+        right: -231%;
+    }
+
+    .animation-coffee a #link-top {
+        position: fixed;
+        right: 5%;
+        bottom: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    #button {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        right: 20px;
+        top: 13px;
+        z-index: 5;
+        opacity: 0;
+    }
+
+    .hamburger {
+        right: 0;
+        position: fixed;
+        z-index: 4;
+    }
+
+    .hamburger > div {
+        width: 50px;
+        height: 8px;
+        background-color: #fff;
+        margin-top: 13px;
+        margin-right: 20px;
+    }
+
+    #button:checked ~ .nav {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .sp {
+        display: inline-block;
+    }
+
+    ruby {
+        font-size: 32px;
+        padding-left: 0;
+        letter-spacing: 5px;
+    }
+
+    rt {
+        font-size: 10px;
+    }
+
+    .concept {
+        font-size: 13px;
+        line-height: 25px;
+        margin: 10px;
+        white-space: wrap;
+    }
+
+    .animation {
+        display: none;
+    }
+
+    .hero {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .contents h1 {
+        font-size: 32px;
+        letter-spacing: 10px;
+        text-align: center;
+        margin: 150px 0 30px;
+        padding-left: 10px;
+    }
+
+    #intro h2 {
+        font-size: 20px;
+        margin-left: 0px;
+        white-space: nowrap;
+    }
+
+    #intro p:not(.concept) {
+        font-size: 13px;
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    #intro img {
+        display: block;
+        margin: 0 auto;
+        top: auto;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        position: relative;
+        width: 90%;
+        align-self: flex-start;
+    }
+
+    #intro .element {
+        margin: 50px auto;
+        width: 90vw;
+        position: relative;
+        display: flex;
+        height: auto;
+        flex-flow: row wrap;
+    }
+
+    #intro .sentence {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        top: auto;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        align-self: flex-start;
+    }
+
+    #intro .right-sentence {
+        right: auto;
+        order: 2;
+    }
+
+    #intro .left-sentence {
+        left: auto;
+        order: 2;
+    }
+
+    #intro .right-photo {
+        right: auto;
+        order: 1;
+    }
+
+    #intro .left-photo {
+        left: auto;
+        order: 1;
+    }
+
+    .coffee {
+        width: 70%;
+        height: 200px;
+    }
+
+    #menu .coffee h2 {
+        font-size: 20px;
+    }
+
+    #menu h3 {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    #menu p {
+        width: 50vw;
+        font-size: 13px;
+        padding-left: 20px;
+    }
+
+    .menu-imgs .menu-img .menu-name {
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 20px;
+    }
+
+    .yen {
+        font-size: 25px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    #menu-img-1,
+    #menu-img-2,
+    #menu-img-3,
+    #menu-img-4 {
+        background-image: none;
+    }
+
+    .menu-imgs .menu-img {
+        width: 100vw;
+        height: auto;
+        clear: both;
+    }
+
+    .menu-imgs .menu-img img {
+        width: 50%;
+    }
+
+    .menu-imgs .menu-img .menu-name,
+    .yen {
+        color: #0f0000;
+        text-align: left;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        opacity: 1;
+        transition: 0.5s;
+        transition-timing-function: ease;
+    }
+
+    #menu-img-1 img {
+        float: right;
+    }
+
+    #menu-img-1 h2 {
+        position: absolute;
+        float: left;
+        left: 25%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #menu-img-2 img {
+        float: left;
+    }
+
+    #menu-img-2 h2 {
+        float: right;
+        position: absolute;
+        right: 25%;
+        top: 50%;
+        -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        -o-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+    }
+
+    #menu-img-3 img {
+        float: right;
+    }
+
+    #menu-img-3 h2 {
+        position: absolute;
+        float: left;
+        left: 25%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #menu-img-4 img {
+        float: left;
+    }
+
+    #menu-img-4 h2 {
+        float: right;
+        position: absolute;
+        right: 25%;
+        top: 50%;
+        -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        -o-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+    }
+
+    #news .fb-container {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    #news blockquote {
+        height: 10vh;
+    }
+
+    #access iframe {
+        width: 100%;
+        height: 400px;
+        margin-left: 0;
+    }
+
+    #access .element {
+        float: none;
+        width: 80%;
+
+    }
+
+    #access h2 {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    #access h3 {
+        font-size: 13px;
+        padding: 5px;
+        padding-left: 30px;
+    }
+
+    footer {
+        margin-top: 300px;
+    }
+
+    footer h5 {
+        margin-bottom: 0;
+    }
 }

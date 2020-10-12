@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cafe海猿舎</title>
     <script>
         (function(d) {
@@ -34,7 +35,6 @@
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
-
     </script>
     <link rel="shortcut icon" href="/images/favicon.png">
 
@@ -42,10 +42,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v8.0" nonce="t05aBzZ3"></script>
 </head>
 
 <body>
     <div class="wrapper" id="top">
+        <input type="checkbox" id="button">
+        <div class="hamburger sp">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+        </div>
         <div class="nav">
             <ul>
                 <li id="nav-1">
@@ -91,10 +98,13 @@
                 <li class="animation-coffee">
                     <div id="animation-coffee"><img id="coffee" src="images/coffee.png" alt=""></div>
                     <img id="cup" src="images/cup.png" alt="">
-                    <a href="#top"><div id="link-top"></div></a>
+                    <a href="#top">
+                        <div id="link-top"></div>
+                    </a>
                 </li>
             </ul>
         </div>
+
         <div class="hero" id="hero">
             <img src="images/logo-alpha.png" alt="ロゴ">
         </div>
@@ -163,25 +173,33 @@
                 <div class="menu-img" id="menu-img-1">
                     <div class="filter"></div>
                     <h2 class="menu-name">アフォガード<br><span class="yen">500yen</span></h2>
+                    <img class="sp" src="images/affogato-sp.png" alt="">
                 </div>
                 <div class="menu-img" id="menu-img-2">
                     <div class="filter"></div>
                     <h2 class="menu-name">チョコレート&amp;<br>くるみの<br>パウンドケーキ<br><span class="yen">400yen</span></h2>
+                    <img class="sp" src="images/cake-sp.png" alt="">
                 </div>
                 <div class="menu-img" id="menu-img-3">
                     <div class="filter"></div>
                     <h2 class="menu-name">自家製<br>ジンジャエール<br><span class="yen">500yen</span></h2>
+                    <img class="sp" src="images/ginger-sp.png" alt="">
                 </div>
                 <div class="menu-img" id="menu-img-4">
                     <div class="filter"></div>
                     <h2 class="menu-name">海猿舎<br>クリームソーダ<br><span class="yen">500yen</span></h2>
+                    <img class="sp" src="images/soda-sp.png" alt="">
                 </div>
             </div>
         </div>
 
         <div id="news" class="contents">
             <h1>News</h1>
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fumisaruya&tabs=timeline&width=500&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="700" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <div class="fb-container">
+                <div class="fb-page" data-href="https://www.facebook.com/umisaruya" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                    <blockquote cite="https://www.facebook.com/umisaruya" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/umisaruya">Cafe 海猿舎</a></blockquote>
+                </div>
+            </div>
         </div>
 
         <div id="gallery" class="contents">
@@ -228,6 +246,7 @@
         </div>
 
         <footer>
+            <img src="images/logo-alpha.png" alt="">
             <h5>&copy;Cafe海猿舎</h5>
         </footer>
     </div>
@@ -258,31 +277,36 @@
                         }
                     },
                     {
+                        breakpoint: 810,
+                        settings: {
+                            slidesToShow: 3,
+                            dots: false
+                        }
+                    },
+                    {
                         breakpoint: 770,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 2,
+                            dots: false
                         }
                     },
                     {
                         breakpoi0nt: 480,
                         settings: {
-                            slidesToShow: 1
+                            slidesToShow: 1,
+                            dots: false
                         }
                     }
                 ]
 
             });
         });
-
     </script>
 
     <script>
         $(window).scroll(function() {
             $('#animation-coffee').css('height', (60 / 3400 * $(this).scrollTop()) + "px");
         });
-
     </script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-</body>
-
-</html>
+</body></html>
