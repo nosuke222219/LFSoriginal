@@ -443,11 +443,29 @@ li a:hover + .animation {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    filter: blur(1px)saturate(85%);
     -webkit-transform: translate(0, -78px);
     -ms-transform: translate(0, -78px);
     -o-transform: translate(0, -78px);
     transform: translate(0, -78px);
+  position: relative;
+  z-index: 0;
+}
+
+.hero:before{
+  content: '';
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(1px)saturate(85%);
+  -moz-filter: blur(1px)saturate(85%);
+  -o-filter: blur(1px)saturate(85%);
+  -ms-filter: blur(1px)saturate(85%);
+  filter: blur(1px)saturate(85%);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
 }
 
 .hero img {
@@ -455,8 +473,9 @@ li a:hover + .animation {
     position: absolute;
     width: 50%;
     max-width: 600px;
-    top: 55vh;
+    top: 48vh;
     left: 50vw;
+    z-index: 10;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
