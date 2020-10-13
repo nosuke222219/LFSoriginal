@@ -443,6 +443,7 @@ li a:hover + .animation {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    filter: blur(1px)saturate(85%);
     -webkit-transform: translate(0, -78px);
     -ms-transform: translate(0, -78px);
     -o-transform: translate(0, -78px);
@@ -821,11 +822,11 @@ footer h5 {
 
     .hamburger > div {
         width: 50px;
-        height: 5px;
+        height: 3px;
         border-radius: 1px;
         background-color: rgba(255, 255, 255, 0.8);
         border: 1px solid rgba(0, 0, 0, 0.2);
-        margin-top: 16px;
+        margin-top: 18px;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;
@@ -865,7 +866,7 @@ footer h5 {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
-        transform: rotate(-45deg)translate(-11px, 11px);
+        transform: rotate(-45deg)translate(-13px, 13px);
         transform-origin: left 100% 0;
         margin: 0;
         width: 61px;
