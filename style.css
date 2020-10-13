@@ -12,6 +12,10 @@
     color: #0f0000;
 }
 
+p{
+    letter-spacing: 0.2em;
+}
+
 .wrapper {
     background-color: #f1f1f1;
 }
@@ -448,17 +452,18 @@ li a:hover + .animation {
     -o-transform: translate(0, -78px);
     transform: translate(0, -78px);
   position: relative;
+    overflow: hidden;
   z-index: 0;
 }
 
 .hero:before{
   content: '';
   background: inherit;/*.bgImageで設定した背景画像を継承する*/
-  -webkit-filter: blur(1px)saturate(85%);
-  -moz-filter: blur(1px)saturate(85%);
-  -o-filter: blur(1px)saturate(85%);
-  -ms-filter: blur(1px)saturate(85%);
-  filter: blur(1px)saturate(85%);
+  -webkit-filter: blur(3px)saturate(85%);
+  -moz-filter: blur(3px)saturate(85%);
+  -o-filter: blur(3px)saturate(85%);
+  -ms-filter: blur(3px)saturate(85%);
+  filter: blur(3px)saturate(85%);
   position: absolute;
   /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
   top: -5px;
@@ -473,7 +478,7 @@ li a:hover + .animation {
     position: absolute;
     width: 50%;
     max-width: 600px;
-    top: 48vh;
+    top: 50vh;
     left: 50vw;
     z-index: 10;
     -webkit-transform: translate(-50%, -50%);
@@ -1218,7 +1223,7 @@ footer h5 {
     }
 
     #news .fb-container {
-        width: 90%;
+        width: 75%;
         max-width: 500px;
     }
 
