@@ -726,10 +726,6 @@ footer h5 {
         transition: 0.3s;
         transition-timing-function: ease
     }
-    
-    .nav:hover{
-        opacity: 1;
-    }
 
     .nav ul {
         margin-top: 15vh;
@@ -916,7 +912,7 @@ footer h5 {
         transition-timing-function: ease;
     }
 
-    li a:hover + .animation {
+    li a:active + .animation {
         -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
         -o-transform: translate(0, 0);
