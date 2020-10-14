@@ -2,28 +2,6 @@
 <html lang="ja">
 
 <head>
-    <script>
-        var getDevice = (function() {
-            var ua = navigator.userAgent;
-            if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-                return 'sp';
-            } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-                return 'tab';
-            } else {
-                return 'other';
-            }
-        })();
-
-        if (getDevice == 'sp') {
-            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">');
-        } else if (getDevice == 'tab') {
-            document.write('<meta name="viewport" content="width=959">');
-        } else if (getDevice == 'other') {
-            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">');
-        }
-
-    </script>
-
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -197,22 +175,22 @@
                 <div class="menu-img" id="menu-img-1">
                     <div class="filter"></div>
                     <h2 class="menu-name">アフォガード<br><span class="yen">500yen</span></h2>
-                    <img class="sp" src="images/affogato-sp.png" alt="">
+                    <img ontouchstart=”” class="sp" src="images/affogato-sp.png" alt="">
                 </div>
                 <div class="menu-img" id="menu-img-2">
                     <div class="filter"></div>
                     <h2 class="menu-name">チョコレート&amp;<br>くるみの<br>パウンドケーキ<br><span class="yen">400yen</span></h2>
-                    <img class="sp" src="images/cake-sp.png" alt="">
+                    <img ontouchstart=”” class="sp" src="images/cake-sp.png" alt="">
                 </div>
                 <div class="menu-img" id="menu-img-3">
                     <div class="filter"></div>
                     <h2 class="menu-name">自家製<br>ジンジャエール<br><span class="yen">500yen</span></h2>
-                    <img class="sp" src="images/ginger-sp.png" alt="">
+                    <img ontouchstart=”” class="sp" src="images/ginger-sp.png" alt="">
                 </div>
                 <div class="menu-img" id="menu-img-4">
                     <div class="filter"></div>
                     <h2 class="menu-name">海猿舎<br>クリームソーダ<br><span class="yen">500yen</span></h2>
-                    <img class="sp" src="images/soda-sp.png" alt="">
+                    <img ontouchstart=”” class="sp" src="images/soda-sp.png" alt="">
                 </div>
             </div>
         </div>
