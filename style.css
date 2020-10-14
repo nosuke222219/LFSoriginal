@@ -12,7 +12,7 @@
     color: #0f0000;
 }
 
-p{
+p {
     letter-spacing: 0.2em;
 }
 
@@ -451,26 +451,28 @@ li a:hover + .animation {
     -ms-transform: translate(0, -78px);
     -o-transform: translate(0, -78px);
     transform: translate(0, -78px);
-  position: relative;
+    position: relative;
     overflow: hidden;
-  z-index: 0;
+    z-index: 0;
 }
 
-.hero:before{
-  content: '';
-  background: inherit;/*.bgImageで設定した背景画像を継承する*/
-  -webkit-filter: blur(3px)saturate(85%);
-  -moz-filter: blur(3px)saturate(85%);
-  -o-filter: blur(3px)saturate(85%);
-  -ms-filter: blur(3px)saturate(85%);
-  filter: blur(3px)saturate(85%);
-  position: absolute;
-  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;/*重なり順序を一番下にしておく*/
+.hero:before {
+    content: '';
+    background: inherit;
+    /*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(3px)saturate(85%);
+    -moz-filter: blur(3px)saturate(85%);
+    -o-filter: blur(3px)saturate(85%);
+    -ms-filter: blur(3px)saturate(85%);
+    filter: blur(3px)saturate(85%);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    /*重なり順序を一番下にしておく*/
 }
 
 .hero img {
@@ -734,6 +736,47 @@ footer h5 {
     margin-bottom: 50px;
 }
 
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width : 810px) {
 
     .nav {
@@ -859,8 +902,8 @@ footer h5 {
     #line1 {
         margin-top: 0;
     }
-    
-    #button:checked{
+
+    #button:checked {
         -webkit-transform: translate(-15px, 0px);
         -ms-transform: translate(-15px, 0px);
         -o-transform: translate(-15px, 0px);
@@ -951,46 +994,46 @@ footer h5 {
         bottom: -20px;
         right: 5%;
     }
-    
+
     @keyframes news {
-    0% {
-        width: 100%;
-        -webkit-transform: rotate(0deg)scale(0.7);
-        -ms-transform: rotate(0deg)scale(0.7);
-        -o-transform: rotate(0deg)scale(0.7);
-        transform: rotate(0deg)scale(0.7);
+        0% {
+            width: 100%;
+            -webkit-transform: rotate(0deg)scale(0.7);
+            -ms-transform: rotate(0deg)scale(0.7);
+            -o-transform: rotate(0deg)scale(0.7);
+            transform: rotate(0deg)scale(0.7);
 
-        -webkit-transform-origin: 50% 100% 0;
-        -moz-transform-origin: 50% 100% 0;
-        -ms-transform-origin: 50% 100% 0;
-        -o-transform-origin: 50% 100% 0;
-        transform-origin: 50% 100% 0;
-    }
+            -webkit-transform-origin: 50% 100% 0;
+            -moz-transform-origin: 50% 100% 0;
+            -ms-transform-origin: 50% 100% 0;
+            -o-transform-origin: 50% 100% 0;
+            transform-origin: 50% 100% 0;
+        }
 
-    25% {
-        width: 0%;
-        -webkit-transform: rotate(180deg)scale(0);
-        -ms-transform: rotate(180deg)scale(0);
-        -o-transform: rotate(180deg)scale(0);
-        transform: rotate(180deg)scale(0);
-    }
+        25% {
+            width: 0%;
+            -webkit-transform: rotate(180deg)scale(0);
+            -ms-transform: rotate(180deg)scale(0);
+            -o-transform: rotate(180deg)scale(0);
+            transform: rotate(180deg)scale(0);
+        }
 
-    50% {
-        width: 0%;
-        -webkit-transform: rotate(360deg)scale(0.7);
-        -ms-transform: rotate(360deg)scale(0.7);
-        -o-transform: rotate(360deg)scale(0.7);
-        transform: rotate(360deg)scale(0.7);
-    }
+        50% {
+            width: 0%;
+            -webkit-transform: rotate(360deg)scale(0.7);
+            -ms-transform: rotate(360deg)scale(0.7);
+            -o-transform: rotate(360deg)scale(0.7);
+            transform: rotate(360deg)scale(0.7);
+        }
 
-    100% {
-        width: 100%;
-        -webkit-transform: rotate(360deg)scale(0.7);
-        -ms-transform: rotate(360deg)scale(0.7);
-        -o-transform: rotate(360deg)scale(0.7);
-        transform: rotate(360deg)scale(0.7);
+        100% {
+            width: 100%;
+            -webkit-transform: rotate(360deg)scale(0.7);
+            -ms-transform: rotate(360deg)scale(0.7);
+            -o-transform: rotate(360deg)scale(0.7);
+            transform: rotate(360deg)scale(0.7);
+        }
     }
-}
 
     #nav-1 .animation img {
         width: 50%;
@@ -1001,21 +1044,21 @@ footer h5 {
     }
 
     #nav-3 .trim {
-    position: relative;
-    overflow: auto;
-    right: auto;
-    bottom: auto;
-    width: auto;
-    height: auto;
+        position: relative;
+        overflow: auto;
+        right: auto;
+        bottom: auto;
+        width: auto;
+        height: auto;
 
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
 
-#nav-3 .trim img {
-    display: none;
-}
+    #nav-3 .trim img {
+        display: none;
+    }
 
     .hero {
         -webkit-transform: translate(0, 0);
