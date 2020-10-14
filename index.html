@@ -2,6 +2,28 @@
 <html lang="ja">
 
 <head>
+    <script>
+        var getDevice = (function() {
+            var ua = navigator.userAgent;
+            if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+                return 'sp';
+            } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
+                return 'tab';
+            } else {
+                return 'other';
+            }
+        })();
+
+        if (getDevice == 'sp') {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">');
+        } else if (getDevice == 'tab') {
+            document.write('<meta name="viewport" content="width=1280">');
+        } else if (getDevice == 'other') {
+            document.write('<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">');
+        }
+
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -35,6 +57,7 @@
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
+
     </script>
     <link rel="shortcut icon" href="/images/favicon.png">
 
@@ -297,12 +320,14 @@
 
             });
         });
+
     </script>
 
     <script>
         $(window).scroll(function() {
             $('#animation-coffee').css('height', (60 / 3000 * $(this).scrollTop()) + "px");
         });
+
     </script>
     <script>
         $(document).ready(function() {
@@ -310,6 +335,7 @@
                 $('input[type="checkbox"]').removeAttr('checked').prop('checked', false).change();
             });
         });
+
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -325,6 +351,9 @@
                 });
             });
         });
+
     </script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-</body></html>
+</body>
+
+</html>
