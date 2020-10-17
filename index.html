@@ -46,6 +46,34 @@
 </head>
 
 <body>
+    <div id="loader-bg" class="is-hide">
+        <div id="loader" class="is-hide">
+            <div id="shape1"></div>
+            <div id="shape2"></div>
+            <div id="shape3"></div>
+            <p>NOW LOADING <span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></p>
+        </div>
+    </div>
+    
+    <script>
+        var bg = $('#loader-bg'),
+            loader = $('#loader');
+        /* ローディング画面の非表示を解除 */
+        bg.removeClass('is-hide');
+        loader.removeClass('is-hide');
+
+        /* 読み込み完了 */
+        $(window).on('load', stopload);
+
+        /* 10秒経ったら強制的にローディング画面を非表示にする */
+        setTimeout('stopload()', 10000);
+
+        /* ローディング画面を非表示にする処理 */
+        function stopload() {
+            bg.delay(900).fadeOut(800);
+            loader.delay(900).fadeOut(300);
+        }
+    </script>
     <div class="wrapper" id="top">
         <input type="checkbox" id="button">
         <div class="hamburger sp">
@@ -99,6 +127,7 @@
                 <li class="animation-coffee">
                     <div id="animation-coffee"><img id="coffee" src="images/coffee.png" alt=""></div>
                     <img id="cup" src="images/cup.png" alt="">
+                       <p class="sp">Topへ戻る</p>
                     <a class="page-link" href="#top">
                         <div id="link-top"></div>
                     </a>
@@ -192,6 +221,7 @@
                     <img onclick=”” ontouchend=”” class="sp" src="images/soda-sp.png" alt="">
                 </div>
             </div>
+            <h5 class="menu-direction">この他にも、季節に合わせたメニューがございます</h5>
         </div>
 
         <div id="news" class="contents">
@@ -249,8 +279,8 @@
         <footer>
             <img src="images/logo-alpha.png" alt="" class="logo">
             <div class="sns-container">
-            <a href="https://www.facebook.com/umisaruya"><img src="images/f_logo_RGB-Blue_58.png" alt=""></a>
-            <a href="https://www.instagram.com/umizaruya/"><img src="images/IG_Glyph_Fill.png" alt=""></a>
+                <a href="https://www.facebook.com/umisaruya"><img src="images/f_logo_RGB-Blue_58.png" alt=""></a>
+                <a href="https://www.instagram.com/umizaruya/"><img src="images/IG_Glyph_Fill.png" alt=""></a>
             </div>
             <h5>&copy; 2020 Cafe海猿舎</h5>
         </footer>
