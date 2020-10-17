@@ -9,7 +9,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 4ex;
-    color: #0f0000;
+    color: #140b00;
 }
 
 p {
@@ -1060,7 +1060,7 @@ footer h5 {
     .hamburger > div {
         width: 50px;
         height: 3px;
-        background-color: #0f0000;
+        background-color: #140b00;
         margin-top: 18px;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
@@ -1362,7 +1362,7 @@ footer h5 {
 
     .menu-imgs .menu-img .menu-name,
     .yen {
-        color: #0f0000;
+        color: #140b00;
         text-align: left;
         position: relative;
         right: auto;
