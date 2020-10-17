@@ -35,7 +35,6 @@
             };
             s.parentNode.insertBefore(tk, s)
         })(document);
-
     </script>
     <link rel="shortcut icon" href="/images/favicon.png">
 
@@ -238,19 +237,21 @@
             <h1>Access</h1>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.9127055806684!2d141.523778315581!3d43.85763797911484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0c7a959318f247%3A0x916e16bebac17a00!2zY2FmZSDmtbfnjL_oiI4!5e0!3m2!1sja!2sjp!4v1602313392104!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <div class="element">
-                <h2>〒077-0205<br>北海道増毛郡増毛町弁天町1-21-1</h2>
+                <h2>〒077-0205<br>北海道増毛郡増毛町<br class="address">弁天町1-21-1</h2>
                 <h3>旧増毛駅バス停から徒歩2分</h3>
                 <h3>営業時間　AM 11:00 - PM 05:00</h3>
                 <h3>定休日　不定休</h3>
                 <h3>座席数　9席</h3>
                 <h3>支払い方法　現金・PayPay</h3>
-                <a href="https://www.facebook.com/umisaruya"><img src="images/f_logo_RGB-Blue_58.png" alt=""></a>
-                <a href="https://www.instagram.com/umizaruya/"><img src="images/IG_Glyph_Fill.png" alt=""></a>
             </div>
         </div>
 
         <footer>
-            <img src="images/logo-alpha.png" alt="">
+            <img src="images/logo-alpha.png" alt="" class="logo">
+            <div class="sns-container">
+            <a href="https://www.facebook.com/umisaruya"><img src="images/f_logo_RGB-Blue_58.png" alt=""></a>
+            <a href="https://www.instagram.com/umizaruya/"><img src="images/IG_Glyph_Fill.png" alt=""></a>
+            </div>
             <h5>&copy; 2020 Cafe海猿舎</h5>
         </footer>
     </div>
@@ -272,25 +273,25 @@
                 autoplaySpeed: 10000,
                 centerMode: true,
                 focusOnSelect: true,
-                slidesToShow: 4,
+                slidesToShow: 6,
                 slidesToScroll: 1,
                 responsive: [{
                         breakpoint: 1030,
                         settings: {
-                            slidesToShow: 3
+                            slidesToShow: 4
                         }
                     },
                     {
                         breakpoint: 810,
                         settings: {
-                            slidesToShow: 3,
+                            slidesToShow: 4,
                             dots: false
                         }
                     },
                     {
                         breakpoint: 770,
                         settings: {
-                            slidesToShow: 2,
+                            slidesToShow: 3,
                             dots: false
                         }
                     }
@@ -298,14 +299,12 @@
 
             });
         });
-
     </script>
 
     <script>
         $(window).scroll(function() {
             $('#animation-coffee').css('height', (60 / 3000 * $(this).scrollTop()) + "px");
         });
-
     </script>
     <script>
         $(document).ready(function() {
@@ -313,7 +312,6 @@
                 $('input[type="checkbox"]').removeAttr('checked').prop('checked', false).change();
             });
         });
-
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -329,9 +327,6 @@
                 });
             });
         });
-
     </script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-</body>
-
-</html>
+</body></html>

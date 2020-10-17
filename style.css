@@ -306,10 +306,10 @@ li a:hover {
 }
 
 li a:hover + .animation {
-    -webkit-transform: translate(0, -10px);
-    -ms-transform: translate(0, -10px);
-    -o-transform: translate(0, -10px);
-    transform: translate(0, -10px);
+    -webkit-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+    transform: translate(0, 0px);
 }
 
 .animation img,
@@ -680,7 +680,7 @@ rt {
 }
 
 .slider-for div img {
-    width: 50%;
+    width: 35%;
     display: block;
     margin: 50px auto;
     border: 8px double #ad870e;
@@ -711,6 +711,10 @@ rt {
     padding: 20px;
 }
 
+.address{
+    display: none;
+}
+
 #access h3 {
     font-size: 20px;
     padding: 5px;
@@ -724,16 +728,35 @@ rt {
 }
 
 footer {
-    background-color: #511900;
+/*    background-color: #511900;*/
+    background-color: #140b00;
     margin-top: 300px;
 }
 
-footer img {
+footer .logo {
     display: block;
     margin: 0 auto;
     width: 200px;
     padding: 20px;
     padding-bottom: 0;
+    margin-bottom: -10px;
+}
+
+footer .sns-container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    padding: 5px;
+}
+
+footer a img{
+    width: 30px;
 }
 
 footer h5 {
@@ -780,6 +803,12 @@ footer h5 {
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0);
+    }
+}
+
+@media screen and (max-width : 1343px) {
+    .address{
+        display: block;
     }
 }
 
@@ -896,9 +925,7 @@ footer h5 {
     .hamburger > div {
         width: 50px;
         height: 3px;
-        border-radius: 1px;
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: #0f0000;
         margin-top: 18px;
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
@@ -925,12 +952,12 @@ footer h5 {
         margin: 0;
         width: 61px;
         border: 0;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: #fff;
     }
 
     #button:checked ~ .hamburger #line2 {
         width: 0;
-        border: 0;
+        background-color: #fff;
 
     }
 
