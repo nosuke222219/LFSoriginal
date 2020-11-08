@@ -945,7 +945,7 @@ footer h5 {
         transform: translate(100vw, 0);
         bottom: auto;
         width: 100vw;
-        height: 110vh;
+        height: 150vh;
         padding: 0;
         background-color: rgba(0, 0, 0, 0.6);
         -webkit-transition: 0.3s;
