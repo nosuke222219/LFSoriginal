@@ -1,385 +1,491 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Cafe海猿舎</title>
 
-    <meta name="Description" content="Cafe海猿舎は、旅人宿「ぼちぼちいこか増毛舘」に併設されている9席だけの小さな喫茶店。" />
+    <meta
+      name="Description"
+      content="Cafe海猿舎は、旅人宿「ぼちぼちいこか増毛舘」に併設されている9席だけの小さな喫茶店。"
+    />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@botiboti19" />
     <meta name="twitter:title" content="Cafe海猿舎" />
-    <meta name="twitter:description" content="Cafe海猿舎は、旅人宿「ぼちぼちいこか増毛舘」に併設されている9席だけの小さな喫茶店。" />
-    <meta name="twitter:image" content="https://umizaruya.netlify.app/images/hero.webp" />
+    <meta
+      name="twitter:description"
+      content="Cafe海猿舎は、旅人宿「ぼちぼちいこか増毛舘」に併設されている9席だけの小さな喫茶店。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://umizaruya.netlify.app/images/hero.webp"
+    />
     <meta property="og:title" content="Cafe海猿舎" />
     <meta property="og:site_name" content="Cafe海猿舎" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://umizaruya.site" />
-    <meta property="og:image" content="https://umizaruya.site/images/hero.webp" />
+    <meta
+      property="og:image"
+      content="https://umizaruya.site/images/hero.webp"
+    />
     <meta property="og:locale" content="ja_JP" />
-    <meta property="og:description" content="Cafe海猿舎は、旅人宿「ぼちぼちいこか増毛舘」に併設されている9席だけの小さな喫茶店。" />
-    <link rel="shortcut icon" href="/images/favicon.webp">
+    <meta
+      property="og:description"
+      content="Cafe海猿舎は、旅人宿「ぼちぼちいこか増毛舘」に併設されている9席だけの小さな喫茶店。"
+    />
+    <link rel="shortcut icon" href="/images/favicon.webp" />
     <meta property="fb:app_id" content="660274714691541" />
 
     <script>
-        (function(d) {
-            var config = {
-                    kitId: 'fsz7qih',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h = d.documentElement,
-                t = setTimeout(function() {
-                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                }, config.scriptTimeout),
-                tk = d.createElement("script"),
-                f = false,
-                s = d.getElementsByTagName("script")[0],
-                a;
-            h.className += " wf-loading";
-            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-            tk.async = true;
-            tk.onload = tk.onreadystatechange = function() {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
-                f = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (e) {}
-            };
-            s.parentNode.insertBefore(tk, s)
-        })(document);
-
+      (function (d) {
+        var config = {
+            kitId: "jpr6ole",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v8.0" nonce="t05aBzZ3"></script>
-</head>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v8.0"
+      nonce="t05aBzZ3"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div id="loader-bg" class="is-hide">
-        <div id="loader" class="is-hide">
-            <div id="shape1"></div>
-            <div id="shape2"></div>
-            <div id="shape3"></div>
-            <p>NOW LOADING <span id="dot1">.</span><span id="dot2">.</span><span id="dot3">.</span></p>
-        </div>
+      <div id="loader" class="is-hide">
+        <div id="shape1"></div>
+        <div id="shape2"></div>
+        <div id="shape3"></div>
+        <p>
+          NOW LOADING <span id="dot1">.</span><span id="dot2">.</span
+          ><span id="dot3">.</span>
+        </p>
+      </div>
     </div>
 
     <script>
-        var bg = $('#loader-bg'),
-            loader = $('#loader');
-        /* ローディング画面の非表示を解除 */
-        bg.removeClass('is-hide');
-        loader.removeClass('is-hide');
+      var bg = $("#loader-bg"),
+        loader = $("#loader");
+      /* ローディング画面の非表示を解除 */
+      bg.removeClass("is-hide");
+      loader.removeClass("is-hide");
 
-        /* 読み込み完了 */
-        $(window).on('load', stopload);
+      /* 読み込み完了 */
+      $(window).on("load", stopload);
 
-        /* 10秒経ったら強制的にローディング画面を非表示にする */
-        setTimeout('stopload()', 10000);
+      /* 10秒経ったら強制的にローディング画面を非表示にする */
+      setTimeout("stopload()", 10000);
 
-        /* ローディング画面を非表示にする処理 */
-        function stopload() {
-            bg.delay(900).fadeOut(800);
-            loader.delay(900).fadeOut(300);
-        }
-
+      /* ローディング画面を非表示にする処理 */
+      function stopload() {
+        bg.delay(900).fadeOut(800);
+        loader.delay(900).fadeOut(300);
+      }
     </script>
     <div class="wrapper" id="top">
-        <input type="checkbox" id="button">
-        <div class="hamburger sp">
-            <div id="line1"></div>
-            <div id="line2"></div>
-            <div id="line3"></div>
+      <input type="checkbox" id="button" />
+      <div class="hamburger sp">
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li id="nav-1">
+            <a class="page-link" href="#intro"
+              >Intro<span class="sp">duction</span></a
+            >
+            <div class="animation">
+              <img id="intro-1" src="images/intro-1.webp" alt="" />
+              <img id="intro-2" src="images/intro-2.webp" alt="" />
+            </div>
+          </li>
+          <li id="nav-2">
+            <a class="page-link" href="#menu">Menu</a>
+            <div class="animation">
+              <img id="menu-1" src="images/menu-1.webp" alt="" />
+              <img id="menu-2" src="images/menu-2.webp" alt="" />
+              <img id="menu-3" src="images/menu-3.webp" alt="" />
+              <img id="menu-4" src="images/menu-4.webp" alt="" />
+              <img id="menu-5" src="images/menu-5.webp" alt="" />
+              <img id="menu-6" src="images/menu-6.webp" alt="" />
+            </div>
+          </li>
+          <li id="nav-3">
+            <a class="page-link" href="#news">News</a>
+            <div class="animation">
+              <img id="news-1" src="images/news-1.webp" alt="" />
+              <div class="trim">
+                <img id="news-2" src="images/news-2.webp" alt="" />
+              </div>
+            </div>
+          </li>
+          <li id="nav-4">
+            <a class="page-link" href="#gallery">Gallery</a>
+            <div class="animation">
+              <img id="gallery-1" src="images/gallery-1.webp" alt="" />
+              <img id="gallery-2" src="images/gallery-2.webp" alt="" />
+              <img id="gallery-3" src="images/gallery-3.webp" alt="" />
+            </div>
+          </li>
+          <li id="nav-5">
+            <a class="page-link" href="#access">Access</a>
+            <div class="animation">
+              <img id="access-1" src="images/access-1.webp" alt="" />
+              <img id="access-2" src="images/access-2.webp" alt="" />
+              <img id="access-3" src="images/access-3.webp" alt="" />
+            </div>
+          </li>
+          <li class="animation-coffee">
+            <div id="animation-coffee">
+              <img id="coffee" src="images/coffee.webp" alt="" />
+            </div>
+            <img id="cup" src="images/cup.webp" alt="" />
+            <p class="sp">Topへ戻る</p>
+            <a class="page-link" href="#top">
+              <div id="link-top"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero" id="hero">
+        <img src="images/logo-alpha.webp" alt="ロゴ" />
+      </div>
+      <div id="intro" class="contents">
+        <h1>
+          Cafe<ruby>海猿舎<rt>うみざるや</rt></ruby
+          ><ruby>とは</ruby>
+        </h1>
+        <p class="concept">
+          昭和初期に建てられた元駅前旅館の建物が<br />旅人宿に生まれ変わった「ぼちぼちいこか増毛舘」。<br />そこに併設されている9席だけの小さな喫茶店。
+        </p>
+        <div class="element">
+          <div class="left-sentence sentence">
+            <h2>北海道増毛町</h2>
+            <p>
+              漁業や農業が盛んな北海道の増毛（ましけ）町。歴史的建造物が立ち並び、潮が香る道沿いに海猿舎は位置しています。
+            </p>
+          </div>
+          <img class="right-photo" src="images/mashike.webp" alt="" />
         </div>
-        <div class="nav">
-            <ul>
-                <li id="nav-1">
-                    <a class="page-link" href="#intro">Intro<span class="sp">duction</span></a>
-                    <div class="animation">
-                        <img id="intro-1" src="images/intro-1.webp" alt="">
-                        <img id="intro-2" src="images/intro-2.webp" alt="">
-                    </div>
-                </li>
-                <li id="nav-2">
-                    <a class="page-link" href="#menu">Menu</a>
-                    <div class="animation">
-                        <img id="menu-1" src="images/menu-1.webp" alt="">
-                        <img id="menu-2" src="images/menu-2.webp" alt="">
-                        <img id="menu-3" src="images/menu-3.webp" alt="">
-                        <img id="menu-4" src="images/menu-4.webp" alt="">
-                        <img id="menu-5" src="images/menu-5.webp" alt="">
-                        <img id="menu-6" src="images/menu-6.webp" alt="">
-                    </div>
-                </li>
-                <li id="nav-3">
-                    <a class="page-link" href="#news">News</a>
-                    <div class="animation">
-                        <img id="news-1" src="images/news-1.webp" alt="">
-                        <div class="trim"><img id="news-2" src="images/news-2.webp" alt=""></div>
-                    </div>
-                </li>
-                <li id="nav-4">
-                    <a class="page-link" href="#gallery">Gallery</a>
-                    <div class="animation">
-                        <img id="gallery-1" src="images/gallery-1.webp" alt="">
-                        <img id="gallery-2" src="images/gallery-2.webp" alt="">
-                        <img id="gallery-3" src="images/gallery-3.webp" alt="">
-                    </div>
-                </li>
-                <li id="nav-5">
-                    <a class="page-link" href="#access">Access</a>
-                    <div class="animation">
-                        <img id="access-1" src="images/access-1.webp" alt="">
-                        <img id="access-2" src="images/access-2.webp" alt="">
-                        <img id="access-3" src="images/access-3.webp" alt="">
-                    </div>
-                </li>
-                <li class="animation-coffee">
-                    <div id="animation-coffee"><img id="coffee" src="images/coffee.webp" alt=""></div>
-                    <img id="cup" src="images/cup.webp" alt="">
-                    <p class="sp">Topへ戻る</p>
-                    <a class="page-link" href="#top">
-                        <div id="link-top"></div>
-                    </a>
-                </li>
-            </ul>
+        <div class="element">
+          <img class="left-photo" src="images/shokanbetsu.webp" alt="" />
+          <div class="right-sentence sentence">
+            <h2>暑寒別岳の水</h2>
+            <p>
+              増毛町には暑寒別岳という増毛町の象徴のような山があり、そこから流れる伏流水を使ってコーヒーを淹れています。
+            </p>
+          </div>
         </div>
-
-        <div class="hero" id="hero">
-            <img src="images/logo-alpha.webp" alt="ロゴ">
+        <div class="element">
+          <div class="left-sentence sentence">
+            <h2>味わい深いネルドリップ</h2>
+            <p>
+              ネルドリップのため、繊維で濾過されたコーヒーは雑味が抑えられ、コクのある、舌触りの滑らかな味が楽しめます。
+            </p>
+          </div>
+          <img class="right-photo" src="images/flannel.webp" alt="" />
         </div>
-        <div id="intro" class="contents">
-            <h1>Cafe<ruby>海猿舎<rt>うみざるや</rt></ruby><ruby>とは</ruby></h1>
-            <p class="concept">昭和初期に建てられた元駅前旅館の建物が<br>旅人宿に生まれ変わった「ぼちぼちいこか増毛舘」。<br>そこに併設されている9席だけの小さな喫茶店。</p>
-            <div class="element">
-                <div class="left-sentence sentence">
-                    <h2>北海道増毛町</h2>
-                    <p>
-                        漁業や農業が盛んな北海道の増毛（ましけ）町。歴史的建造物が立ち並び、潮が香る道沿いに海猿舎は位置しています。
-                    </p>
-                </div>
-                <img class="right-photo" src="images/mashike.webp" alt="">
-            </div>
-            <div class="element">
-                <img class="left-photo" src="images/shokanbetsu.webp" alt="">
-                <div class="right-sentence sentence">
-                    <h2>暑寒別岳の水</h2>
-                    <p>
-                        増毛町には暑寒別岳という増毛町の象徴のような山があり、そこから流れる伏流水を使ってコーヒーを淹れています。
-                    </p>
-                </div>
-            </div>
-            <div class="element">
-                <div class="left-sentence sentence">
-                    <h2>味わい深いネルドリップ</h2>
-                    <p>
-                        ネルドリップのため、繊維で濾過されたコーヒーは雑味が抑えられ、コクのある、舌触りの滑らかな味が楽しめます。
-                    </p>
-                </div>
-                <img class="right-photo" src="images/flannel.webp" alt="">
-            </div>
-            <div class="element">
-                <img class="left-photo" src="images/cups.webp" alt="">
-                <div class="right-sentence sentence">
-                    <h2>こだわりコーヒーカップ</h2>
-                    <p>
-                        器はひとつひとつ店主が窯元や陶器市に出向き購入しています。ひとつひとつ形の違う、こだわりの器で飲むことができます。
-                    </p>
-                </div>
-            </div>
+        <div class="element">
+          <img class="left-photo" src="images/cups.webp" alt="" />
+          <div class="right-sentence sentence">
+            <h2>こだわりコーヒーカップ</h2>
+            <p>
+              器はひとつひとつ店主が窯元や陶器市に出向き購入しています。ひとつひとつ形の違う、こだわりの器で飲むことができます。
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div id="menu" class="contents">
-
-            <h1>Menu</h1>
-            <div class="coffee">
-                <h2>ぼちぼちブレンド</h2>
-                <p>店主が好きなインドの豆を主体にブレンドした、ほろ苦深煎りタイプのコーヒーです</p>
-                <h3>......400yen</h3>
-            </div>
-
-            <div class="coffee">
-                <h2>海猿舎ブレンド</h2>
-                <p>ブラジル、コロンビアを主体にブレンドした、すっきりとした酸味のある浅煎りタイプのコーヒーです</p>
-                <h3>......400yen</h3>
-            </div>
-
-            <div class="coffee">
-                <h2>アイスコーヒー</h2>
-                <p>注文を受けてからその場で淹れるコーヒーを急冷させているので香りをそのままに楽しめます</p>
-                <h3>......450yen</h3>
-            </div>
-            <div class="menu-imgs">
-                <div class="menu-img" id="menu-img-1">
-                    <div class="filter"></div>
-                    <h2 class="menu-name">アフォガード<br><span class="yen">500yen</span></h2>
-                    <img onclick="" ontouchend="" class="sp" src="images/affogato-sp.webp" alt="">
-                </div>
-                <div class="menu-img" id="menu-img-2">
-                    <div class="filter"></div>
-                    <h2 class="menu-name">チョコレート&amp;<br>くるみの<br>パウンドケーキ<br><span class="yen">400yen</span></h2>
-                    <img onclick="" ontouchend="" class="sp" src="images/cake-sp.webp" alt="">
-                </div>
-                <div class="menu-img" id="menu-img-3">
-                    <div class="filter"></div>
-                    <h2 class="menu-name">自家製<br>ジンジャエール<br><span class="yen">500yen</span></h2>
-                    <img onclick="" ontouchend="" class="sp" src="images/ginger-sp.webp" alt="">
-                </div>
-                <div class="menu-img" id="menu-img-4">
-                    <div class="filter"></div>
-                    <h2 class="menu-name">海猿舎<br>クリームソーダ<br><span class="yen">500yen</span></h2>
-                    <img onclick="" ontouchend="" class="sp" src="images/soda-sp.webp" alt="">
-                </div>
-            </div>
-            <h5 class="menu-direction">この他にも、季節に合わせたメニューがございます</h5>
+      <div id="menu" class="contents">
+        <h1>Menu</h1>
+        <div class="coffee">
+          <h2>ぼちぼちブレンド</h2>
+          <p>
+            店主が好きなインドの豆を主体にブレンドした、ほろ苦深煎りタイプのコーヒーです
+          </p>
+          <h3>......400yen</h3>
         </div>
 
-        <div id="news" class="contents">
-            <h1>News</h1>
-            <div class="fb-container">
-                <div class="fb-page" data-href="https://www.facebook.com/umisaruya" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-                    <blockquote cite="https://www.facebook.com/umisaruya" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/umisaruya">Cafe 海猿舎</a></blockquote>
-                </div>
-            </div>
+        <div class="coffee">
+          <h2>海猿舎ブレンド</h2>
+          <p>
+            ブラジル、コロンビアを主体にブレンドした、すっきりとした酸味のある浅煎りタイプのコーヒーです
+          </p>
+          <h3>......400yen</h3>
         </div>
 
-        <div id="gallery" class="contents">
-            <h1>Gallery</h1>
-            <div class="slider-for">
-                <div><img src="images/g1.webp" alt=""></div>
-                <div><img src="images/g2.webp" alt=""></div>
-                <div><img src="images/g3.webp" alt=""></div>
-                <div><img src="images/g4.webp" alt=""></div>
-                <div><img src="images/g5.webp" alt=""></div>
-                <div><img src="images/g6.webp" alt=""></div>
-                <div><img src="images/g7.webp" alt=""></div>
-                <div><img src="images/g8.webp" alt=""></div>
-                <div><img src="images/g9.webp" alt=""></div>
-                <div><img src="images/g10.webp" alt=""></div>
-                <div><img src="images/g11.webp" alt=""></div>
-            </div>
-            <div class="slider">
-                <div><img src="images/g1.webp" alt=""></div>
-                <div><img src="images/g2.webp" alt=""></div>
-                <div><img src="images/g3.webp" alt=""></div>
-                <div><img src="images/g4.webp" alt=""></div>
-                <div><img src="images/g5.webp" alt=""></div>
-                <div><img src="images/g6.webp" alt=""></div>
-                <div><img src="images/g7.webp" alt=""></div>
-                <div><img src="images/g8.webp" alt=""></div>
-                <div><img src="images/g9.webp" alt=""></div>
-                <div><img src="images/g10.webp" alt=""></div>
-                <div><img src="images/g11.webp" alt=""></div>
-            </div>
+        <div class="coffee">
+          <h2>アイスコーヒー</h2>
+          <p>
+            注文を受けてからその場で淹れるコーヒーを急冷させているので香りをそのままに楽しめます
+          </p>
+          <h3>......450yen</h3>
         </div>
-
-        <div id="access" class="contents">
-            <h1>Access</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.9127055806684!2d141.523778315581!3d43.85763797911484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0c7a959318f247%3A0x916e16bebac17a00!2zY2FmZSDmtbfnjL_oiI4!5e0!3m2!1sja!2sjp!4v1602313392104!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <div class="element">
-                <h2>〒077-0205<br>北海道増毛郡増毛町<br class="address">弁天町1-21-1</h2>
-                <h3>旧増毛駅バス停から徒歩2分</h3>
-                <h3>営業時間　AM 11:00 - PM 05:00</h3>
-                <h3>定休日　不定休</h3>
-                <h3>座席数　9席</h3>
-                <h3>支払い方法　現金・PayPay</h3>
-            </div>
+        <div class="menu-imgs">
+          <div class="menu-img" id="menu-img-1">
+            <div class="filter"></div>
+            <h2 class="menu-name">
+              アフォガード<br /><span class="yen">500yen</span>
+            </h2>
+            <img
+              onclick=""
+              ontouchend=""
+              class="sp"
+              src="images/affogato-sp.webp"
+              alt=""
+            />
+          </div>
+          <div class="menu-img" id="menu-img-2">
+            <div class="filter"></div>
+            <h2 class="menu-name">
+              チョコレート&amp;<br />くるみの<br />パウンドケーキ<br /><span
+                class="yen"
+                >400yen</span
+              >
+            </h2>
+            <img
+              onclick=""
+              ontouchend=""
+              class="sp"
+              src="images/cake-sp.webp"
+              alt=""
+            />
+          </div>
+          <div class="menu-img" id="menu-img-3">
+            <div class="filter"></div>
+            <h2 class="menu-name">
+              自家製<br />ジンジャエール<br /><span class="yen">500yen</span>
+            </h2>
+            <img
+              onclick=""
+              ontouchend=""
+              class="sp"
+              src="images/ginger-sp.webp"
+              alt=""
+            />
+          </div>
+          <div class="menu-img" id="menu-img-4">
+            <div class="filter"></div>
+            <h2 class="menu-name">
+              海猿舎<br />クリームソーダ<br /><span class="yen">500yen</span>
+            </h2>
+            <img
+              onclick=""
+              ontouchend=""
+              class="sp"
+              src="images/soda-sp.webp"
+              alt=""
+            />
+          </div>
         </div>
+        <h5 class="menu-direction">
+          この他にも、季節に合わせたメニューがございます
+        </h5>
+      </div>
 
-        <footer>
-            <img src="images/logo-alpha.webp" alt="" class="logo">
-            <div class="sns-container">
-                <a href="https://www.facebook.com/umisaruya"><img src="images/f_logo_RGB-Blue_58.webp" alt=""></a>
-                <a href="https://www.instagram.com/umizaruya/"><img src="images/IG_Glyph_Fill.webp" alt=""></a>
-            </div>
-            <h5>&copy; 2020 Cafe海猿舎</h5>
-        </footer>
+      <div id="news" class="contents">
+        <h1>News</h1>
+        <div class="fb-container">
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/umisaruya"
+            data-tabs="timeline"
+            data-width="500"
+            data-height="700"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="false"
+          >
+            <blockquote
+              cite="https://www.facebook.com/umisaruya"
+              class="fb-xfbml-parse-ignore"
+            >
+              <a href="https://www.facebook.com/umisaruya">Cafe 海猿舎</a>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="contents">
+        <h1>Gallery</h1>
+        <div class="slider-for">
+          <div><img src="images/g1.webp" alt="" /></div>
+          <div><img src="images/g2.webp" alt="" /></div>
+          <div><img src="images/g3.webp" alt="" /></div>
+          <div><img src="images/g4.webp" alt="" /></div>
+          <div><img src="images/g5.webp" alt="" /></div>
+          <div><img src="images/g6.webp" alt="" /></div>
+          <div><img src="images/g7.webp" alt="" /></div>
+          <div><img src="images/g8.webp" alt="" /></div>
+          <div><img src="images/g9.webp" alt="" /></div>
+          <div><img src="images/g10.webp" alt="" /></div>
+          <div><img src="images/g11.webp" alt="" /></div>
+        </div>
+        <div class="slider">
+          <div><img src="images/g1.webp" alt="" /></div>
+          <div><img src="images/g2.webp" alt="" /></div>
+          <div><img src="images/g3.webp" alt="" /></div>
+          <div><img src="images/g4.webp" alt="" /></div>
+          <div><img src="images/g5.webp" alt="" /></div>
+          <div><img src="images/g6.webp" alt="" /></div>
+          <div><img src="images/g7.webp" alt="" /></div>
+          <div><img src="images/g8.webp" alt="" /></div>
+          <div><img src="images/g9.webp" alt="" /></div>
+          <div><img src="images/g10.webp" alt="" /></div>
+          <div><img src="images/g11.webp" alt="" /></div>
+        </div>
+      </div>
+
+      <div id="access" class="contents">
+        <h1>Access</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.9127055806684!2d141.523778315581!3d43.85763797911484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0c7a959318f247%3A0x916e16bebac17a00!2zY2FmZSDmtbfnjL_oiI4!5e0!3m2!1sja!2sjp!4v1602313392104!5m2!1sja!2sjp"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <div class="element">
+          <h2>
+            〒077-0205<br />北海道増毛郡増毛町<br class="address" />弁天町1-21-1
+          </h2>
+          <h3>旧増毛駅バス停から徒歩2分</h3>
+          <h3>営業時間　AM 11:00 - PM 05:00</h3>
+          <h3>定休日　不定休</h3>
+          <h3>座席数　9席</h3>
+          <h3>支払い方法　現金・PayPay</h3>
+        </div>
+      </div>
+
+      <footer>
+        <img src="images/logo-alpha.webp" alt="" class="logo" />
+        <div class="sns-container">
+          <a href="https://www.facebook.com/umisaruya"
+            ><img src="images/f_logo_RGB-Blue_58.webp" alt=""
+          /></a>
+          <a href="https://www.instagram.com/umizaruya/"
+            ><img src="images/IG_Glyph_Fill.webp" alt=""
+          /></a>
+        </div>
+        <h5>&copy; 2020 Cafe海猿舎</h5>
+      </footer>
     </div>
 
     <script>
-        $(function() {
-            $('.slider-for').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: '.slider'
-            });
-            $('.slider').slick({
-                arrows: true,
-                dots: true,
-                autoplay: true,
-                asNavFor: '.slider-for',
-                autoplaySpeed: 10000,
-                centerMode: true,
-                focusOnSelect: true,
-                slidesToShow: 6,
-                slidesToScroll: 1,
-                responsive: [{
-                        breakpoint: 1030,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    },
-                    {
-                        breakpoint: 810,
-                        settings: {
-                            slidesToShow: 4,
-                            dots: false
-                        }
-                    },
-                    {
-                        breakpoint: 770,
-                        settings: {
-                            slidesToShow: 3,
-                            dots: false
-                        }
-                    }
-                ]
-
-            });
+      $(function () {
+        $(".slider-for").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: ".slider",
         });
-
+        $(".slider").slick({
+          arrows: true,
+          dots: true,
+          autoplay: true,
+          asNavFor: ".slider-for",
+          autoplaySpeed: 10000,
+          centerMode: true,
+          focusOnSelect: true,
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1030,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 810,
+              settings: {
+                slidesToShow: 4,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 770,
+              settings: {
+                slidesToShow: 3,
+                dots: false,
+              },
+            },
+          ],
+        });
+      });
     </script>
 
     <script>
-        $(window).scroll(function() {
-            $('#animation-coffee').css('height', (60 / 3000 * $(this).scrollTop()) + "px");
-        });
-
+      $(window).scroll(function () {
+        $("#animation-coffee").css(
+          "height",
+          (60 / 3000) * $(this).scrollTop() + "px"
+        );
+      });
     </script>
     <script>
-        $(document).ready(function() {
-            $('a[ class="page-link"]').on('click', function() {
-                $('input[type="checkbox"]').removeAttr('checked').prop('checked', false).change();
-            });
+      $(document).ready(function () {
+        $('a[ class="page-link"]').on("click", function () {
+          $('input[type="checkbox"]')
+            .removeAttr("checked")
+            .prop("checked", false)
+            .change();
         });
-
+      });
     </script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('.contents').css('visibility', 'hidden');
-            $(window).scroll(function() {
-                var windowHeight = $(window).height(),
-                    topWindow = $(window).scrollTop();
-                $('.contents').each(function() {
-                    var objectPosition = $(this).offset().top;
-                    if (topWindow > objectPosition - windowHeight + 200) {
-                        $(this).addClass("fuwatAnime");
-                    }
-                });
-            });
+      $(document).ready(function () {
+        $(".contents").css("visibility", "hidden");
+        $(window).scroll(function () {
+          var windowHeight = $(window).height(),
+            topWindow = $(window).scrollTop();
+          $(".contents").each(function () {
+            var objectPosition = $(this).offset().top;
+            if (topWindow > objectPosition - windowHeight + 200) {
+              $(this).addClass("fuwatAnime");
+            }
+          });
         });
-
+      });
     </script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-</body>
-
+  </body>
 </html>
