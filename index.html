@@ -37,7 +37,7 @@
     <link rel="shortcut icon" href="/images/favicon.webp" />
     <meta property="fb:app_id" content="660274714691541" />
 
-    <script>
+    <script defer>
       (function (d) {
         var config = {
             kitId: "jpr6ole",
@@ -67,9 +67,9 @@
         };
         s.parentNode.insertBefore(tk, s);
       })(document);
-    </script>
+    </script defer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script defer>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script
@@ -78,7 +78,7 @@
       crossorigin="anonymous"
       src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v8.0"
       nonce="t05aBzZ3"
-    ></script>
+    ></script defer>
   </head>
 
   <body>
@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    <script>
+    <script defer>
       var bg = $("#loader-bg"),
         loader = $("#loader");
       /* ローディング画面の非表示を解除 */
@@ -112,7 +112,7 @@
         bg.delay(900).fadeOut(800);
         loader.delay(900).fadeOut(300);
       }
-    </script>
+    </script defer>
     <div class="wrapper" id="top">
       <input type="checkbox" id="button" />
       <div class="hamburger sp">
@@ -409,7 +409,7 @@
       </footer>
     </div>
 
-    <script>
+    <script defer>
       $(function () {
         $(".slider-for").slick({
           slidesToShow: 1,
@@ -452,17 +452,17 @@
           ],
         });
       });
-    </script>
+    </script defer>
 
-    <script>
+    <script defer>
       $(window).scroll(function () {
         $("#animation-coffee").css(
           "height",
           (60 / 3000) * $(this).scrollTop() + "px"
         );
       });
-    </script>
-    <script>
+    </script defer>
+    <script defer>
       $(document).ready(function () {
         $('a[ class="page-link"]').on("click", function () {
           $('input[type="checkbox"]')
@@ -471,7 +471,7 @@
             .change();
         });
       });
-    </script>
+    </script defer>
     <script type="text/javascript">
       $(document).ready(function () {
         $(".contents").css("visibility", "hidden");
@@ -486,7 +486,7 @@
           });
         });
       });
-    </script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    </script defer>
+    <script type="text/javascript" src="slick/slick.min.js"></script defer>
   </body>
 </html>
