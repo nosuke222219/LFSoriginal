@@ -550,12 +550,15 @@ li a:hover + .animation {
     right: 5%;
 }
 
-#link-top {
+.animation-coffee p{
+    color: #f1f1f1;
+    font-size: 10px;
+    text-align: center;
     position: absolute;
-    right: 5%;
-    bottom: -10px;
+    bottom: -5px;
+    right: 8%;
     width: 100px;
-    height: 100px;
+
 }
 
 /*ここまでナビ*/
@@ -995,6 +998,14 @@ footer h5 {
         color: #f1f1f1;
         position: relative;
         background-color: rgba(211, 171, 45, 0);
+        border-bottom: solid #f1f1f1 0px;
+        padding-bottom: 2px;
+    }
+
+    .nav li a:hover{
+        opacity: 1;
+        border-bottom: solid #f1f1f1 2px;
+        
     }
 
     #animation-coffee {
@@ -1017,15 +1028,6 @@ footer h5 {
         position: absolute;
         bottom: 100px;
         right: -231%;
-    }
-
-    .animation-coffee a #link-top {
-        position: fixed;
-        right: 5%;
-        bottom: 40px;
-        width: 100px;
-        height: 200px;
-        z-index: 10;
     }
     
     .animation-coffee p{
@@ -1137,21 +1139,23 @@ footer h5 {
     }
 
     .animation {
-        -webkit-transform: translate(100vw, 0);
-        -ms-transform: translate(100vw, 0);
-        -o-transform: translate(100vw, 0);
-        transform: translate(100vw, 0);
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-        transition-timing-function: ease;
+        display: none
     }
 
-    li a:active + .animation {
-        -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
-        transform: translate(0, 0);
+    #nav-1 a:hover + .animation #intro-1, 
+    #nav-2 a:hover + .animation #menu-2, 
+    #nav-2 a:hover + .animation #menu-3, 
+    #nav-2 a:hover + .animation #menu-4, 
+    #nav-2 a:hover + .animation #menu-5, 
+    #nav-2 a:hover + .animation #menu-6, 
+    #nav-3 a:hover + .animation .trim, 
+    #nav-3 a:hover + .animation img, 
+    #nav-4 a:hover + .animation #gallery-2, 
+    #nav-4 a:hover + .animation #gallery-3, 
+    #nav-5 a:hover + .animation #access-1, 
+    #nav-5 a:hover + .animation #access-2, 
+    #nav-5 a:hover + .animation #access-3 {
+        animation: none;
     }
 
     .animation img,
